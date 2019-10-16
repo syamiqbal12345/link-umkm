@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class BuatTabeltoko extends Migration
+class BuatTablePengguna extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,16 @@ class BuatTabeltoko extends Migration
      */
     public function up()
     {
-        Schema::create('toko', function (Blueprint $table) {
+        Schema::create('pengguna', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama');
-            $table->string('alamat');
-            $table->string('pemilik');
-            $table->integer('ktp_pemilik');
-            $table->integer('nomor_hp');
-            $table->string('user_id');
-            $table->string('status_user');
+            $table->string("nama");
+            $table->string("nomor_ktp");
+            $table->integer("kelamin");
+            $table->string("alamat");
+            $table->string("email");
+            $table->string("foto")->nullable();
+            $table->integer("user_id");
             $table->timestamps();
-            
         });
     }
 
@@ -34,6 +33,6 @@ class BuatTabeltoko extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('toko');
+        Schema::dropIfExists('pengguna');
     }
 }
