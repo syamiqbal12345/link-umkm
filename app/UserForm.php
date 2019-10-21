@@ -13,8 +13,13 @@ class UserForm extends Form
 		$this
 		->add("username", 'text')
 		->add("password", 'password')
-		->add("level")
-		->add('alamat')
+
+		->add("nama")
+		->add("nomor_ktp")
+		->add("kelamin")
+		->add("alamat")
+		->add("email")
+
 		->add('Simpan', 'submit')
 		;
     }
