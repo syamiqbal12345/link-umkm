@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\UserForm;
 use App\User;
+use App\Pengguna;
 
 class UserController extends Controller
 {
@@ -30,8 +31,16 @@ class UserController extends Controller
 
 	public function store(Request $request)
 	{
+		$data=$request->all();
+		$data['level']='pembeli';
 		$user = new User();
-		$user->fill($request->all())->save();
+		$user->fill($data)->save();
+
+		$pengguna = new Pengguna();
+		$pengguna->fill($data);
+		$pengguna->user_id=$user->id;
+		$pengguna->save();
+
 		return 
 		redirect(route('user.index'))->withMessage("Data telah
 		disimpan");

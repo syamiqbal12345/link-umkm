@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pengguna extends Model
 {
     protected $table = "pengguna";
+
     protected $fillable = ["nama", "nomor_ktp", "kelamin", "alamat", "email", "foto", "user_id"];
 
     public function user() 

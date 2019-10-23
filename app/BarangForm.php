@@ -6,19 +6,14 @@ use Kris\LaravelFormBuilder\Form;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
-class UserForm extends Form
+class BarangForm extends Form
 {
     public function buildForm()
     {
-		$this
-		->add("username", 'text')
-		->add("password", 'password')
-
+        $this
 		->add("nama")
-		->add("nomor_ktp")
-		->add("kelamin")
-		->add("alamat")
-		->add("email")
+		->add("harga")
+		->add("foto")
 
 		->add('Simpan', 'submit')
 		;
