@@ -32,9 +32,15 @@ class TokoController extends Controller
 
 	public function store(Request $request)
 	{
+
+		$data = $request->all();
+		$data['user_id'] = 0;
+
 		$toko = new Toko();
-		$toko->fill($request->all())->save();
+		$toko->fill($data)->save();
 		return
+
+		
 		redirect(route('toko.index'))->withMessage("Data telah
 		disimpan");
 	}
