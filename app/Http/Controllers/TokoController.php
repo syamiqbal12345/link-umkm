@@ -33,8 +33,15 @@ class TokoController extends Controller
 	public function store(Request $request)
 	{
 
+		$user = \Auth::user();
+		
+
+		$pengguna = $user->pengguna->id;
+
 		$data = $request->all();
 		$data['user_id'] = 0;
+
+		$data['pengguna_id'] = $pengguna;
 
 		$toko = new Toko();
 		$toko->fill($data)->save();
