@@ -36,6 +36,7 @@ class SecurityController extends Controller
 		Auth::login($user);
 
 		return redirect()->intended()->with('message',"Welcome to the system");
+
 	}
 
 	public function logout()
