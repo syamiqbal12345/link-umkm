@@ -27,16 +27,16 @@ class SecurityController extends Controller
 	{
 		$user = User::where('username',
 		$request->get('username'))
-			->where('password',
+				->where('password',
 		$request->get('password'))->first();
 		if($user == null) {
-			return back()->withMessage("Invalid Username and
-		Password");
+			return back()->withMessage("Invalid Username and Password");
 		}
 
 		Auth::login($user);
 
-		return redirect()->intended()->with('message', "Welcome to the system");
+		return redirect()->intended()->with('message',"Welcome to the system");
+
 	}
 
 	public function logout()

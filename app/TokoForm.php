@@ -18,7 +18,7 @@ class TokoForm extends Form
 		->add("nomor_hp")
 		->add("telepon")
 		->add("email")
-		->add("status")
+		->add("status_user")
 
 		->add('Simpan', 'submit')
 		;

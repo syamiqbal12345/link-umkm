@@ -77,8 +77,7 @@ Route::get("/barang/{id}/delete",
 Route::get('/login',
 'SecurityController@login')->name('login');
 
-Route::post('/login',
-'SecurityController@prosesLogin')->name('login.proses');
+Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
 
 Route::get('/logout',
 'SecurityController@logout')->name('login');
