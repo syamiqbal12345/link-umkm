@@ -41,9 +41,7 @@ class SecurityController extends Controller
 
 	public function logout()
 	{
-
-	Auth::logout();
-	return redirect('/')->withMessage("Goodbye!");
-	
+		Auth::logout();
+		return redirect('/')->withMessage("Goodbye!");
 	}
 }
