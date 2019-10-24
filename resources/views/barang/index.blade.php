@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('content')r
+@section('content')
 	<h3>Data Barang</h3>
 	<hr>
 	<a href="{{ route("barang.create") }}" class="btn

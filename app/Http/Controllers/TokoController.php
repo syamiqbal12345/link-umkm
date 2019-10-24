@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\TokoForm;
 use App\Toko;
-use App\User;
-use App\Pengguna;
 
 class TokoController extends Controller
 {
@@ -32,24 +30,25 @@ class TokoController extends Controller
 
 	public function store(Request $request)
 	{
+		$user = \Auth::user();
+		
+
+		$pengguna = $user->pengguna->id;
 		$data = $request->all();
 		$data['user_id'] = 0;
 
+		$data['pengguna_id'] = $pengguna;
+
 		$toko = new Toko();
 		$toko->fill($data)->save();
-		return
-
-		
-		redirect(route('toko.index'))->withMessage("Data telah
-		disimpan");
+		return redirect(route('toko.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function edit($id, FormBuilder $formBuilder)
 	{
 		$toko = Toko::find($id);
 		$form = $formBuilder->create(TokoForm::class, [
-			'method' => 'POST', 'url' => route('toko.update',
-		['id' => $id]),
+			'method' => 'POST', 'url' => route('toko.update', ['id' => $id]),
 			'model' => $toko
 		]);
 
@@ -60,11 +59,9 @@ class TokoController extends Controller
 	}
 	public function update($id, Request $request)
 	{
-			$toko = Toko::find($id);
-			$toko->fill($request->all())->save();
-			return
-		redirect(route('toko.index'))->withMessage("Data telah
-		disimpan");
+		$toko = Toko::find($id);
+		$toko->fill($request->all())->save();
+		return redirect(route('toko.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function delete($id)

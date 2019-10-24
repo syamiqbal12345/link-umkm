@@ -41,9 +41,7 @@ class UserController extends Controller
 		$pengguna->user_id=$user->id;
 		$pengguna->save();
 
-		return 
-		redirect(route('user.index'))->withMessage("Data telah
-		disimpan");
+		return redirect(route('user.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function edit($id, FormBuilder $formBuilder)
