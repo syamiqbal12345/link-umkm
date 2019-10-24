@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\BarangForm;
 use App\Barang;
+use App\Toko;
+use App\User;
 
 class BarangController extends Controller
 {
@@ -36,6 +38,8 @@ class BarangController extends Controller
 		$toko = $user->pengguna->toko;
 		$data = $request->all();
 		$data['toko_id'] = $toko->id;
+
+		$data['katagori_id'] = 0;
 
 		$barang = new Barang();
 		$barang->fill($data)->save();

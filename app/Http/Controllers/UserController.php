@@ -31,6 +31,7 @@ class UserController extends Controller
 
 	public function store(Request $request)
 	{
+		
 		$data=$request->all();
 		$data['level']='pembeli';
 		$user = new User();
