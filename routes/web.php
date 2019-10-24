@@ -11,8 +11,13 @@
 |
 */
 
+use App\Barang;
+
 Route::get('/', function () {
-    return view('welcome');
+    $data_barang = Barang::all();
+    return view('welcome', [
+        'data_barang' => $data_barang
+    ]);
 });
 
 
