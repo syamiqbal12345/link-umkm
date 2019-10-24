@@ -14,4 +14,9 @@ class Pengguna extends Model
     {
         return $this->belongsTo(User::class, "user_id", "id");
     }
+
+    public function toko() 
+    {
+        return $this->hasOne(Toko::class, "pengguna_id", "id");
+    }
 }

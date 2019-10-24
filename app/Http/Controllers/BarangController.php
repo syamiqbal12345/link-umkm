@@ -20,6 +20,8 @@ class BarangController extends Controller
 
 	public function create(FormBuilder $formBuilder)
 	{
+		
+		
 		$form = $formBuilder->create(BarangForm::class, [
 			'method' => 'POST', 'url' => route('barang.store')
 		]);
@@ -32,14 +34,12 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
-
-		
-		$barang = $toko->barang->id;
-
+		$user = \Auth::user();
+		$toko = $user->pengguna->toko;
 		$data = $request->all();
-		$data['katagori_id'] = 0;
+		$data['toko_id'] = $toko->id;
 
-		$data['barang_id'] = $barang;
+		$data['katagori_id'] = 0;
 
 		$barang = new Barang();
 		$barang->fill($data)->save();
@@ -50,9 +50,8 @@ class BarangController extends Controller
 	{
 		$barang = Barang::find($id);
 		$form = $formBuilder->create(BarangForm::class, [
-			'method' => 'POST', 'url' => route('barang.update',
-		['id' => $id]),
-			'model' => $user
+			'method' => 'POST', 'url' => route('barang.update', ['id' => $id]),
+			'model' => $barang
 		]);
 
 		$data = [
