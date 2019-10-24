@@ -32,6 +32,7 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
+
 		
 		$barang = $toko->barang->id;
 
