@@ -32,20 +32,17 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
- 
-		$user = \Auth::user();
-		$pengguna = $user->pengguna->id;
+		
+		$barang = $toko->barang->id;
 
 		$data = $request->all();
 		$data['katagori_id'] = 0;
 
-		$data['toko_id'] = $toko;
+		$data['barang_id'] = $barang;
 
 		$barang = new Barang();
 		$barang->fill($data)->save();
-		return
-		redirect(route('barang.index'))->withMessage("Data telah
-		disimpan");
+		return redirect(route('barang.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function edit($id, FormBuilder $formBuilder)
