@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -109,3 +110,13 @@
 
 </body>
 </html>
+
+@extends('base')
+
+	@section('content')
+	<h3>User Login</h3>
+	<hr>
+	{!! form($form) !!}
+	
+@endsection
+
