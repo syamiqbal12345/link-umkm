@@ -32,7 +32,7 @@
             <div class="logo-header" data-background-color="blue">
                 
                 <a href="index.html" class="logo">
-                    <img src="../assets/img/logo2.svg" alt="navbar brand" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -86,48 +86,48 @@
                                         <div class="notif-center">
                                             <a href="#">
                                                 <div class="notif-img"> 
-                                                    <img src="../assets/img/jm_denis.jpg" alt="Img Profile">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
-                                                    <span class="subject">Jimmy Denis</span>
+                                                    <span class="subject">Farid Majid</span>
                                                     <span class="block">
-                                                        How are you ?
+                                                        Hai Iqbal ?
                                                     </span>
                                                     <span class="time">5 minutes ago</span> 
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img"> 
-                                                    <img src="../assets/img/chadengle.jpg" alt="Img Profile">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
-                                                    <span class="subject">Chad</span>
+                                                    <span class="subject">Dewi Dian</span>
                                                     <span class="block">
-                                                        Ok, Thanks !
+                                                        Ok, Terima Kasih !
                                                     </span>
                                                     <span class="time">12 minutes ago</span> 
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img"> 
-                                                    <img src="../assets/img/mlane.jpg" alt="Img Profile">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
-                                                    <span class="subject">Jhon Doe</span>
+                                                    <span class="subject">Wiliam Aryanda</span>
                                                     <span class="block">
-                                                        Ready for the meeting today...
+                                                        Pesan apa bal ?
                                                     </span>
                                                     <span class="time">12 minutes ago</span> 
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img"> 
-                                                    <img src="../assets/img/talha.jpg" alt="Img Profile">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
-                                                    <span class="subject">Talha</span>
+                                                    <span class="subject">Wulan Fitri Anjaswati</span>
                                                     <span class="block">
-                                                        Hi, Apa Kabar ?
+                                                        Hi, Apa Kabar Iqbal ?
                                                     </span>
                                                     <span class="time">17 minutes ago</span> 
                                                 </div>
@@ -156,7 +156,7 @@
                                                 <div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
                                                 <div class="notif-content">
                                                     <span class="block">
-                                                        New user registered
+                                                        Ada pesan belum terbaca
                                                     </span>
                                                     <span class="time">5 minutes ago</span> 
                                                 </div>
@@ -165,18 +165,18 @@
                                                 <div class="notif-icon notif-success"> <i class="fa fa-comment"></i> </div>
                                                 <div class="notif-content">
                                                     <span class="block">
-                                                        Rahmad commented on Admin
+                                                        Rahmad menggirim pesan untuk kamu
                                                     </span>
                                                     <span class="time">12 minutes ago</span> 
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img"> 
-                                                    <img src="../assets/img/profile2.jpg" alt="Img Profile">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
-                                                        Reza send messages to you
+                                                        Reza menggirim pesan untuk kamu
                                                     </span>
                                                     <span class="time">12 minutes ago</span> 
                                                 </div>
@@ -185,7 +185,7 @@
                                                 <div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
                                                 <div class="notif-content">
                                                     <span class="block">
-                                                        Farrah liked Admin
+                                                        Farrah menggirim pesan untuk kamu
                                                     </span>
                                                     <span class="time">17 minutes ago</span> 
                                                 </div>
@@ -201,17 +201,17 @@
                         <li class="nav-item dropdown hidden-caret">
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <div class="avatar-sm">
-                                    <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                                    <img src="../assets/img/profile4.jpg" alt="..." class="avatar-img rounded-circle">
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-user animated fadeIn">
                                 <div class="dropdown-user-scroll scrollbar-outer">
                                     <li>
                                         <div class="user-box">
-                                            <div class="avatar-lg"><img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                            <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
-                                                <h4>Admin UMKM</h4>
-                                                <p class="text-muted">umkm.app@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                <h4>M Iqbal</h4>
+                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>
@@ -240,13 +240,13 @@
                 <div class="sidebar-content">
                     <div class="user">
                         <div class="avatar-sm float-left mr-2">
-                            <img src="../assets/img/profile3.jpg" alt="..." class="avatar-img rounded-circle">
+                            <img src="../assets/img/profile4.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                                 <span>
-                                    Admin UMKM
-                                    <span class="user-level">Administrator</span>
+                                    M Iqbal
+                                    <span class="user-level">User</span>
                                     <span class="caret"></span>
                                 </span>
                             </a>
@@ -278,17 +278,7 @@
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                                 <i class="fas fa-home"></i>
                                 <p>HALAMAN UTAMA</p>
-                                <span class="caret"></span>
                             </a>
-                            <div class="collapse" id="dashboard">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="../demo1/index.html">
-                                            <span class="sub-item">Halaman Utama</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
@@ -305,64 +295,28 @@
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="components/avatars.html">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/makananberat">
                                             <span class="sub-item">Makanan Berat</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components/buttons.html">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/makananringan">
                                             <span class="sub-item">Makanan Ringan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components/gridsystem.html">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/minuman">
                                             <span class="sub-item">Minuman</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components/panels.html">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/kerajinan">
                                             <span class="sub-item">Kerajinan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components/notifications.html">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/lainlain">
                                             <span class="sub-item">Lain - lain</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#sidebarLayouts">
-                                <i class="fas fa-th-list"></i>
-                                <p>Sidebar Layouts</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="sidebarLayouts">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="sidebar-style-1.html">
-                                            <span class="sub-item">Sidebar Style 1</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="overlay-sidebar.html">
-                                            <span class="sub-item">Overlay Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compact-sidebar.html">
-                                            <span class="sub-item">Compact Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="static-sidebar.html">
-                                            <span class="sub-item">Static Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="icon-menu.html">
-                                            <span class="sub-item">Icon Menu</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -377,7 +331,7 @@
                             <div class="collapse" id="forms">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="../assets/html/yt.htm">
+                                        <a class="nav-link" href="https://www.youtube.com/watch?v=HRVlfz2MSVY">
                                             <span class="sub-item">Edukasi Video</span>
                                         </a>
                                     </li>
@@ -398,12 +352,12 @@
                             <div class="collapse" id="tables">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="tables/tables.html">
+                                        <a class="nav-link" href="https://www.instagram.com/wiliam_aryanda">
                                             <span class="sub-item">Instagram</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="tables/datatables.html">
+                                        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100004740226308">
                                             <span class="sub-item">Facebook</span>
                                         </a>
                                     </li>
@@ -419,7 +373,7 @@
                             <div class="collapse" id="maps">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="maps/jqvmap.html">
+                                        <a class="nav-link" href="https://www.google.co.id/maps/place/Kota+Samarinda,+Kalimantan+Timur/@-0.5096845,117.0354397,11z/data=!3m1!4b1!4m5!3m4!1s0x2df5d57d33074935:0xef64e9b06c7ad3e7!8m2!3d-0.5016166!4d117.1264753?hl=id">
                                             <span class="sub-item">Google Maps</span>
                                         </a>
                                     </li>
@@ -435,34 +389,9 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a data-toggle="collapse" href="#subnav1">
+                                        <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
-                                            <span class="caret"></span>
                                         </a>
-                                        <div class="collapse" id="subnav1">
-                                            <ul class="nav nav-collapse subnav">
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="sub-item">Page</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="collapse" href="#subnav2">
-                                            <span class="sub-item">Page</span>
-                                            <span class="caret"></span>
-                                        </a>
-                                        <div class="collapse" id="subnav2">
-                                            <ul class="nav nav-collapse subnav">
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="sub-item">Web</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </li>
                                     </li>
                                 </ul>
@@ -476,35 +405,110 @@
 
         <div class="main-panel">
             <div class="content">
-                <div class="page-inner">
-                    <div class="page-header">
-                        <h4 class="page-title">Halaman Utama</h4>
-                        <ul class="breadcrumbs">
-                            <li class="nav-home">
-                                <a href="#">
-                                    <i class="flaticon-home"></i>
+                <div class="panel-header bg-primary-gradient">
+                    <div class="page-inner py-5">
+                        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+                            <div>
+                                <h2 class="text-white pb-2 fw-bold">Halaman Utama</h2>
+                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                            </div>
+                            <div class="ml-md-auto py-2 py-md-0">
+                                <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
+                                <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="page-inner mt--5">
+                <div class="card" style="width: 18rem;">
+    <img src="../assets/img/martabak.jpg" class="card-img-top" alt="gambar">
+        <div class="card-body">
+            <h5 class="card-title">Martabak</h5>
+                <p class="card-text">
+                Martabak adalah makanan ringan yang terbuat dari bahan - bahan yang menyehatkan. Dijamin pasti akan ketagihan.
+            </p>
+        </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp.15.000.-/Porsi</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Lihat</a>
+        <a href="#" class="card-link">Beli</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="../assets/img/gula.jpg" class="card-img-top" alt="gambar">
+        <div class="card-body">
+            <h5 class="card-title">Gula</h5>
+                <p class="card-text">
+                Gula adalah bahan dapur yang digunakan untuk memaniskan makanan dan minuman.
+                </p>
+        </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp.12.000.-/Kg</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Lihat</a>
+        <a href="#" class="card-link">Beli</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="../assets/img/gelang.jpg" class="card-img-top" alt="gambar">
+        <div class="card-body">
+            <h5 class="card-title">Gelang Ethnik Dayak</h5>
+                <p class="card-text">
+                Gelang Ethnik adalah kerajinan tangan yang dibuat oleh masyarakat menggunakan ciri khas adat Dayak.
+                </p>
+        </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp.30.000.-/Pcs</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Lihat</a>
+        <a href="#" class="card-link">Beli</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="../assets/img/tepung.jpg" class="card-img-top" alt="gambar">
+        <div class="card-body">
+            <h5 class="card-title">Tepung Terigu</h5>
+                <p class="card-text">
+                Tepung Terigu adalah suatu bahan makanan yang terbuat dari gandum yang bisa dibuat banyak makanan.
+                </p>
+        </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp.17.000.-/Kg</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Lihat</a>
+        <a href="#" class="card-link">Beli</a>
+    </div>
+</div>
+        <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Al-Khawarizmi Team
                                 </a>
                             </li>
-                            <li class="separator">
-                                <i class="flaticon-right-arrow"></i>
-                            </li>
                             <li class="nav-item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="separator">
-                                <i class="flaticon-right-arrow"></i>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">Starter Page</a>
+                                <a class="nav-link" href="../assets/html/CS.html">
+                                    Help
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="page-category">Inner page content goes here</div>
+                    </nav>
+                    <div class="copyright ml-auto">
+                        2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
+                    </div>              
                 </div>
-            </div>
+            </footer>
         </div>
-        
-    </div>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
