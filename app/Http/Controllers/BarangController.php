@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\BarangForm;
 use App\Barang;
+use App\Toko;
+use App\User;
 
 class BarangController extends Controller
 {
@@ -30,8 +32,17 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
+ 
+		$user = \Auth::user();
+		$pengguna = $user->pengguna->id;
+
+		$data = $request->all();
+		$data['katagori_id'] = 0;
+
+		$data['toko_id'] = $toko;
+
 		$barang = new Barang();
-		$barang->fill($request->all())->save();
+		$barang->fill($data)->save();
 		return
 		redirect(route('barang.index'))->withMessage("Data telah
 		disimpan");

@@ -34,8 +34,6 @@ class TokoController extends Controller
 	{
 
 		$user = \Auth::user();
-		
-
 		$pengguna = $user->pengguna->id;
 
 		$data = $request->all();
@@ -46,7 +44,6 @@ class TokoController extends Controller
 		$toko = new Toko();
 		$toko->fill($data)->save();
 		return
-
 		
 		redirect(route('toko.index'))->withMessage("Data telah
 		disimpan");
