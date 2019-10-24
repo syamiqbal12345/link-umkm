@@ -420,73 +420,109 @@
                     </div>
                 </div>
             <div class="page-inner mt--5">
-                <div class="card" style="width: 18rem;">
-    <img src="../assets/img/martabak.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Martabak</h5>
-                <p class="card-text">
-                Martabak adalah makanan ringan yang terbuat dari bahan - bahan yang menyehatkan. Dijamin pasti akan ketagihan.
-            </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.15.000.-/Porsi</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="../assets/img/martabak.jpg" class="card-img-top" alt="gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Martabak</h5>
+                                    <p class="card-text">
+                                    Martabak adalah makanan ringan yang terbuat dari bahan - bahan yang menyehatkan. Dijamin pasti akan ketagihan.
+                                </p>
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Harga : Rp.15.000.-/Porsi</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Lihat</a>
+                            <a href="#" class="card-link">Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="../assets/img/gula.jpg" class="card-img-top" alt="gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Gula</h5>
+                                    <p class="card-text">
+                                    Gula adalah bahan dapur yang digunakan untuk memaniskan makanan dan minuman.
+                                    </p>
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Harga : Rp.12.000.-/Kg</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Lihat</a>
+                            <a href="#" class="card-link">Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="../assets/img/gelang.jpg" class="card-img-top" alt="gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Gelang Ethnik Dayak</h5>
+                                    <p class="card-text">
+                                    Gelang Ethnik adalah kerajinan tangan yang dibuat oleh masyarakat menggunakan ciri khas adat Dayak.
+                                    </p>
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Harga : Rp.30.000.-/Pcs</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Lihat</a>
+                            <a href="#" class="card-link">Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="../assets/img/tepung.jpg" class="card-img-top" alt="gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Tepung Terigu</h5>
+                                    <p class="card-text">
+                                    Tepung Terigu adalah suatu bahan makanan yang terbuat dari gandum yang bisa dibuat banyak makanan.
+                                    </p>
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Harga : Rp.17.000.-/Kg</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Lihat</a>
+                            <a href="#" class="card-link">Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="../assets/img/tepung.jpg" class="card-img-top" alt="gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Tepung Terigu</h5>
+                                    <p class="card-text">
+                                    Tepung Terigu adalah suatu bahan makanan yang terbuat dari gandum yang bisa dibuat banyak makanan.
+                                    </p>
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Harga : Rp.17.000.-/Kg</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Lihat</a>
+                            <a href="#" class="card-link">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
 
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/gula.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Gula</h5>
-                <p class="card-text">
-                Gula adalah bahan dapur yang digunakan untuk memaniskan makanan dan minuman.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.12.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
+                
 
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/gelang.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Gelang Ethnik Dayak</h5>
-                <p class="card-text">
-                Gelang Ethnik adalah kerajinan tangan yang dibuat oleh masyarakat menggunakan ciri khas adat Dayak.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.30.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
+                
 
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/tepung.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Tepung Terigu</h5>
-                <p class="card-text">
-                Tepung Terigu adalah suatu bahan makanan yang terbuat dari gandum yang bisa dibuat banyak makanan.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.17.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
+                
+
+
+            </div>
+                
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
