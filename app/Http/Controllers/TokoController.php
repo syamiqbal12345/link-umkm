@@ -32,7 +32,6 @@ class TokoController extends Controller
 
 	public function store(Request $request)
 	{
-
 		$data = $request->all();
 		$data['user_id'] = 0;
 
