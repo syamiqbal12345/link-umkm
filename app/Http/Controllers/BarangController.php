@@ -34,7 +34,6 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
-
 		$user = \Auth::user();
 		$toko = $user->pengguna->toko;
 		$data = $request->all();
