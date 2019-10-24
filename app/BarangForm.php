@@ -13,8 +13,8 @@ class BarangForm extends Form
         $this
 		->add("nama")
 		->add("harga")
+		->add("stok")
 		->add("foto")
-
 		->add('Simpan', 'submit')
 		;
     }
