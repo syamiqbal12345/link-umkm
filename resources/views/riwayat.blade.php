@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 
-                <a href="http://127.0.0.1:8000" class="logo">
+                <a href="http://127.0.0.1:8000/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -413,15 +413,49 @@
                                 <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
-                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                                >
+                                <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
+                                <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
                             </div>
                         </div>
                     </div>
                 </div>
             <div class="page-inner mt--5">
-			
-			@yield("content")
+<body>
+    <table border="1">
+    <tr align="center" bgcolor="white">
+    <th width="50px">No</th>
+    <th width="150px">Nama Barang</th>
+    <th width="100px">Harga</th>
+    <th width="50px">Jumlah Barang</th>
+    <th width="100px">Total Harga</th>
+          
+    </tr>
+ 
+    <tr>
+    <td align="center">1</td>
+    <td>Kacang</td>
+    <td>10000</td>
+    <td>1</td>
+    <td>10000</td>
+    </tr>
+ 
+    <tr>
+    <td align="center">2</td>
+    <td>Pepsodent</td>
+    <td>13500</td>
+    <td>2</td>
+    <td>17000</td>
+    </tr>
+    </table>
+</body>
+                
+
+                
+
+                
+
+                
+
 
             </div>
                 
