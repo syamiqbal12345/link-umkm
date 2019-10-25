@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('content')
-	<h3>Form Pengguna</h3>
+	<h3>Data Pengguna</h3>
 	<hr>
 	{!! form($form) !!}
 @endsection

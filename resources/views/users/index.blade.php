@@ -26,8 +26,7 @@ btn-primary">Tambah</a>
 			<a class="btn btn-warning"
 href="{{ route('user.edit', ['id' => $user->id]) }}">Edit</a>
 			<a class="btn btn-danger"
-href="{{ route('user.delete', ['id' =>
-$user->id]) }}">Del</a>
+href="{{ route('user.delete', ['id' => $user->id]) }}">Del</a>
 						</div>
 					</td>
 				</tr>

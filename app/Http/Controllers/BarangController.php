@@ -39,8 +39,6 @@ class BarangController extends Controller
 		$data = $request->all();
 		$data['toko_id'] = $toko->id;
 
-		$data['katagori_id'] = 0;
-
 		$barang = new Barang();
 		$barang->fill($data)->save();
 		return redirect(route('barang.index'))->withMessage("Data telah disimpan");
