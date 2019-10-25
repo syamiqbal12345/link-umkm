@@ -105,6 +105,26 @@ Route::get("/barang/{id}/delete",
 
 
 
+Route::get("/kategori",
+'KategoriController@index')->name("kategori.index");
+
+Route::get("/kategori/create",
+'KategoriController@create')->name("kategori.create");
+
+Route::post("/kategori",
+'KategoriController@store')->name("kategori.store");
+
+Route::get("/kategori/{id}/edit",
+'KategoriController@edit')->name("kategori.edit");
+
+Route::post("/kategori/{id}",
+'KategoriController@update')->name("kategori.update");
+
+Route::get("/kategori/{id}/delete",
+'KategoriController@delete')->name("kategori.delete");
+
+
+
 Route::get('/login',
 'SecurityController@login')->name('login');
 
