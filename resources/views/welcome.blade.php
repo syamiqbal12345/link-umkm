@@ -432,7 +432,7 @@
                             <li class="list-group-item">Harga : Rp. {{ $item->harga}}</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Lihat</a>
+                            <a href="http://127.0.0.1:8000/lihat" class="card-link">Lihat</a>
                             <a href="#" class="card-link">Beli</a>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>UMKM</title>
+    <title>Makanan Ringan</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -276,8 +276,7 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <i class="fas fa-home"></i>
-                                <p>HALAMAN UTAMA</p>
+                                <p>MAKANAN RINGAN</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -409,160 +408,114 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Halaman Utama</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                                <h2 class="text-white pb-2 fw-bold">Dilhat Dulu</h2>
+                                <h5 class="text-white op-7 mb-2">Semoga Suka :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
-                                <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-                                <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
+                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div class="c-panel__body">
-<div class="o-layout o-layout--responsive">
-<div class="o-layout__item o-layout__item--empty u-4of12 u-position-relative">
-<div class="c-product-image-gallery js-product-image-gallery js-variant-detail-element js-variant-image-" rel="0">
-<nav class="c-product-image-gallery__thumbnails js-product-image-gallery__thumbnails--top u-hidden">
-<a class="c-product-image-gallery__image js-product-image-gallery__image qa-pd-image" rel="0" href="https://s1.bukalapak.com/img/6908466533/w-1000/Kacang_Mix_Nut_Dua_Kelinci_150_gr.jpg"><picture><source srcset="https://s1.bukalapak.com/img/6908466533/w-300/Kacang_Mix_Nut_Dua_Kelinci_150_gr.jpg.webp" type="image/webp"><source srcset="https://s1.bukalapak.com/img/6908466533/w-300/Kacang_Mix_Nut_Dua_Kelinci_150_gr.jpg" type="image/jpg"><img alt="Kacang Mix Nut Dua Kelinci 150 gr" src="https://s1.bukalapak.com/img/6908466533/w-300/Kacang_Mix_Nut_Dua_Kelinci_150_gr.jpg" width="300" height="300"></picture>
-</div>
-<div class="c-modal__footer js-product-image-gallery__actions u-hidden">
-<div class="u-clearfix">
-<form class="js-express-checkout-form u-width-1of3 u-float-left" novalidate="novalidate" data-no-turbolink="true" action="/cart/carts/add_product?button_type=direct_checkout&amp;express_checkout=true&amp;referrer=pdp&amp;referrer_event=product_detail%2Fbeli" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="BFAF0JKEa+RGnEgrTfJmf1HcG1BtHOoePRrzuNpytQ0=">
-<input value="1237388447" type="hidden" name="item[product_id]">
-<input value="1235590432" type="hidden" name="item[product_sku_id]">
-<input value="1" class="js-express-checkout-quantity js-qty-follower" type="hidden" name="item[quantity]">
-<button class="c-btn c-btn--green c-btn--large c-btn--block qa-pd-image-buy-btn js-track-atc-catalog js-image-gallery-buy-btn">
-Beli
-</button>
-</form>
-<form class="js-add-item-to-cart-form u-width-2of3 u-pad-left--2 u-float-left" novalidate="novalidate" action="/cart/carts/add_product?button_type=detail_buy&amp;from=homepage&amp;referrer=pdp&amp;reskin=1&amp;type=popular-products-Section-4" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input value="1237388447" type="hidden" name="item[product_id]">
-<input value="1235590432" type="hidden" name="item[product_sku_id]">
-<input type="hidden" name="authenticity_token" value="BFAF0JKEa+RGnEgrTfJmf1HcG1BtHOoePRrzuNpytQ0=">
-<input value="1" class="js-express-checkout-quantity js-qty-follower" type="hidden" name="item[quantity]">
-<input type="hidden" name="from" value="homepage"><input type="hidden" name="type" value="popular-products-Section-4"></form>
-</div>
-</div>
 
-<div class="js-variant-badge- js-variant-detail-element qa-pd-discount-badge u-mrgn-left--5 u-mrgn-top--1 u-position--top-left u-position-absolute">
+            <div class="page-inner mt--5">
+           <div class="card mb-3" style="max-width: 1050px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../assets/img/lays.jpg" class="card-img" alt="gambar" height="100%">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Lays</h5>
+        <p class="card-text">Lay's adalah produk kripik kentang yang terkenal dengan rasa gurih yang luar biasa, nikmati kualitas terbaik dari merek yang sudah diakui secara Internasional. Renyahnya Lays siap hadir di keseharianmu dengan 6 rasa yang menggugah selera</p>
+        <div class="o-layout o-layout--tiny">
+    <div class="o-layout__item u-4of12 js-qty-field">
+    <div class="c-inp-grp-table">
+        <h5 class="card-sub-title">
+            <font color="blue">Jumlah yang ingin dipesan :</font>
+        </h5>
+        <div class="c-inp__btn">
+            <button class="c-btn c-btn--narrow js-qty-field__btn-dec qa-pd-decrease-qty-btn" type="button">-</button>
+        </div>
+    <input value="1">
+    <div class="c-inp__btn">
+        <button class="c-btn c-btn--narrow js-qty-field__btn-inc qa-pd-increase-qty-btn" type="button">+</button>
+    </div>
+
+<div class="container">
+    <div class="button-container">
+        <a data-toggle="collapse" href="#">
+    <button type="submit" class="button"><span>Beli Sekarang</span></button>
+    </a>
+  </div> 
 </div>
-</div>
-<div class="o-layout__item u-8of12 u-position-relative">
-<div class="c-product-detail__actions">
-<div class="c-product-detail__action" data-insert-inside-url="/products/1237388447/admin_link"></div>
-</div>
-<h1 class="c-product-detail__name qa-pd-name">Kacang Mix Nut Dua Kelinci 150 gr</h1>
-<div class="c-product-rating u-mrgn-top--1" data-target-id="product-detail-product-review" data-type="go-to-click">
-<div class="c-product-rating__visual c-rating" title="92.0"><div class="c-rating c-rating--medium qa-product-review-icon"><div class="c-rating__bg"><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span></div><div class="c-rating__fg" style="width: 92.0%"><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span><span class="c-icon c-icon--star c-rating__unit"></span></div></div></div>
-</div>
-<hr class="u-hr--small">
-<div class="js-product-detail-price js-variant-detail-element js-variant-price- qa-pd-price u-mrgn-bottom--3 u-position-relative">
-<div class="js-gvoucher-disable">
-<div class="c-product-detail-price" data-referrer="show" data-reduced-price="22500" data-installment="false"><span class="c-product-detail-price__original"><span class="currency positive">Rp</span><span class="amount positive">25.000</span></span>
-<div class="gmc-wrap-col">
-</div>
-</div>
-<script>
-  document.getElementById('gmc-voucher-copy').onclick = function() {
-    document.getElementById('gmc-voucher-input').select();
-    document.execCommand('copy');
-  }
-</script>
 <style>
-  .gmc-wrap {
-    border-radius: 4px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 1px 0 #bbbbbb;
-    margin-top: 12px;
-    font-size: 0;
-  }
-  
-  .gmc-wrap-col {
-    display: inline-block;
-    font-size: 14px;
-    padding: 14px;
-    vertical-align: top;
-    width: 32%;
-  }
-  
-  .gmc-wrap-icon {
-    padding: 14px 0 14px 14px;
-    width: 8%;
-  }
-  
-  .gmc-wrap-text {
-    width: 60%;
-  }
-  
-  .gmc-voucher {
-    position: relative;
-  }
-  
-  .gmc-voucher input {
-    border: 0;
-    border-radius: 2px;
-    background-color: #f5f5f5;
-    color: #333;
-    pointer-events: none;
-  }
-  
-  #gmc-voucher-copy {
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*--------------------------------Button starts--------------------------------*/
+.button-container {
+  text-align: center;
+}
+.button {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: #D81900;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: #D81900;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.button:focus {
+  outline: none;
+}
+/*--------------------------------Button ends--------------------------------*/
 </style>
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-</div>
-<div class="u-clearfix u-mrgn-top--3 u-mrgn-bottom--3 js-product-buy">
-<form class="js-add-item-to-cart-form js-one-click-payment-form" novalidate="novalidate" action="/cart/carts/add_product?button_type=detail_buy&amp;from=homepage&amp;referrer=pdp&amp;referrer_event=product_detail%2Fbeli&amp;reskin=1&amp;search_sort_default=false&amp;type=popular-products-Section-4" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input value="1237388447" type="hidden" name="item[product_id]">
-<input value="1235590432" type="hidden" name="item[product_sku_id]">
-<input type="hidden" name="authenticity_token" value="BFAF0JKEa+RGnEgrTfJmf1HcG1BtHOoePRrzuNpytQ0=">
-<div class="js-variant-detail-element js-variant-stock-" data-sku-class="">
-<div class="u-txt--small qa-pd-stock">
-<strong class="u-fg--black">
-Tersedia
-<span class="u-fg--green-super-dark">
-&gt; 200 stok
-</span>
-barang
-</strong>
-</div>
-<div class="o-layout o-layout--responsive u-mrgn-bottom--2">
-<div class="o-layout__item">
-<label class="u-mrgn-bottom--1 u-txt--small">
-Masukkan jumlah yang diinginkan
-</label>
-<div class="o-layout o-layout--tiny">
-<div class="o-layout__item u-4of12 js-qty-field">
-<div class="c-inp-grp-table">
-<div class="c-inp__btn">
-<button class="c-btn c-btn--narrow js-qty-field__btn-dec qa-pd-decrease-qty-btn" type="button">-</button>
-</div>
-<input value="1" data-track-id="1237388447" data-track-identity="0d2b6d069412e7df426828ea428226f7" data-track-cid="466" data-bukapengadaan-threshold="null" data-max-value="385" data-min-value="1" class="string optional js-qty-field__input c-inp u-align-center js-qty-leader" id="product-detail-quantity" type="text" name="item[quantity]">
-<div class="c-inp__btn">
-<button class="c-btn c-btn--narrow js-qty-field__btn-inc qa-pd-increase-qty-btn" type="button">+</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="js-buy-button o-layout o-layout--tiny u-mrgn-bottom--1">
-<div class="o-layout__item">
-<button class="c-btn c-btn--green c-btn--large c-btn--block js-express-checkout-trigger qa-pd-button-buy qa-button-buy js-pdp-buy-btn js-track-atc-reco js-track-atc-catalog" type="button">
-Beli Sekarang
-</button>
-</div>
-</div>
-</div>
-</div>
-            </div>
-                
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
