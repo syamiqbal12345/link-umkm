@@ -6,15 +6,16 @@ use Kris\LaravelFormBuilder\Form;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
-class BarangForm extends Form
+class ItemTransaksiForm extends Form
 {
     public function buildForm()
     {
         $this
-		->add("nama")
-		->add("harga")
-		->add("stok")
-		->add("foto")
-		->add('Simpan', 'submit');
+        ->add("harga")
+        ->add("jumlah")
+        ->add("total")
+        ->add("rating")
+
+        ->add('Simpan', 'submit');
     }
 }
