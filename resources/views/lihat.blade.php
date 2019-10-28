@@ -408,7 +408,7 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Dilhat Dulu</h2>
+                                <h2 class="text-white pb-2 fw-bold">Dilihat Dulu</h2>
                                 <h5 class="text-white op-7 mb-2">Semoga Suka :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
@@ -426,8 +426,12 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Lays</h5>
+        <h5 class="card-title pb-10 fw-bold">Lays</h5>
         <p class="card-text">Lay's adalah produk kripik kentang yang terkenal dengan rasa gurih yang luar biasa, nikmati kualitas terbaik dari merek yang sudah diakui secara Internasional. Renyahnya Lays siap hadir di keseharianmu dengan 6 rasa yang menggugah selera</p>
+
+         <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp.6.000.-/Pcs</li>
+    </ul>
         <div class="o-layout o-layout--tiny">
     <div class="o-layout__item u-4of12 js-qty-field">
     <div class="c-inp-grp-table">
