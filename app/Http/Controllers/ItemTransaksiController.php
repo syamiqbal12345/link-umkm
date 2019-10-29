@@ -48,22 +48,20 @@ class ItemTransaksiController extends Controller
 	{
 		$itemtansaksi = ItemTransaksi::find($id);
 		$form = $formBuilder->create(ItemTransaksiForm::class, [
-			'method' => 'POST', 'url' => route('itemtansaksi.update', ['id' => $id]),
-			'model' => $itemtansaksi
+			'method' => 'POST', 'url' => route('itemtransaksi.update', ['id' => $id]),
+
 		]);
 
 		$data = [
 			'form' => $form
 		];
-		return view('itemtansaksi.create', $data);
+		return view('itemtransaksi.create', $data);
 	}
 	public function update($id, Request $request)
 	{
-			$itemtansaksi = ItemTransaksi::find($id);
-			$itemtansaksi->fill($request->all())->save();
-			return
-		redirect(route('itemtansaksi.index'))->withMessage("Data telah
-		disimpan");
+			$itemtransaksi = ItemTransaksi::find($id);
+			$itemtransaksi->fill($request->all())->save();
+			return redirect(route('itemtransaksi.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function delete($id)
