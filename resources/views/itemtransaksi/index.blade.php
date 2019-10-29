@@ -4,13 +4,12 @@
 	<div class="card">
 		<div class="card-body">
 			<div class="card-title">
-				Data Barang Toko
+				Item Transaksi
 				<div class="pull-right">
-					<a style="color:#fff" href="{{ route("barang.create") }}" class="btn btn-primary">Tambah</a>
+					<a style="color:#fff" href="{{ route("itemtransaksi.create") }}" class="btn btn-primary">Tambah</a>
 				</div>
 			</div>
-			
-				
+
 		</div>
 	
 		<div class="card-body">
@@ -18,26 +17,26 @@
 		<thead>
 			<tr>
 				<th>#</th>
-				<th>Nama</th>
 				<th>Harga</th>
-				<th>Foto</th>
-				<th>Stok</th>
+				<th>Jumlah</th>
+				<th>Total</th>
+				<th>Rating</th>
 				<th>Opsi</th>
 			</tr>
 		</thead>
 <tbody>
-@foreach ($barang as $no=>$item)
+@foreach ($itemtransaksi as $no=>$item)
 	<tr>
 		<td>{{ $no + 1 }}</td>
-		<td>{{ $item->nama }} </td>
 		<td>{{ $item->harga }} </td>
-		<td>{{ $item->foto }} </td>
-		<td>{{ $item->stok}}</td>
+		<td>{{ $item->jumlah }} </td>
+		<td>{{ $item->total }} </td>
+		<td>{{ $item->rating }}</td>
 		<td><img src="{{ $item->foto }}" width="100"> </td>
 		<td>
 		<div class="btn-group btn-group-sm">
-			<a class="btn btn-warning" href="{{ route('barang.edit', ['id' => $item->id]) }}">Edit</a>
-			<a class="btn btn-danger" href="{{ route('barang.delete', ['id' => $item->id]) }}">Del</a>
+			<a class="btn btn-warning" href="{{ route('itemtransaksi.edit', ['id' => $item->id]) }}">Edit</a>
+			<a class="btn btn-danger" href="{{ route('itemtransaksi.delete', ['id' => $item->id]) }}">Del</a>
 						</div>
 					</td>
 				</tr>

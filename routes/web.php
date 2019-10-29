@@ -136,6 +136,44 @@ Route::get("/kategori/{id}/delete",
 'KategoriController@delete')->name("kategori.delete");
 
 
+Route::get("/itemtransaksi",
+'ItemTransaksiController@index')->name("itemtransaksi.index");
+
+Route::get("/itemtransaksi/create",
+'ItemTransaksiController@create')->name("itemtransaksi.create");
+
+Route::post("/itemtransaksi",
+'ItemTransaksiController@store')->name("itemtransaksi.store");
+
+Route::get("/itemtransaksi/{id}/edit",
+'ItemTransaksiController@edit')->name("itemtransaksi.edit");
+
+Route::post("/itemtransaksi/{id}",
+'ItemTransaksiController@update')->name("itemtransaksi.update");
+
+Route::get("/itemtransaksi/{id}/delete",
+'ItemTransaksiController@delete')->name("itemtransaksi.delete");
+
+
+Route::get("/transaksi",
+'TransaksiController@index')->name("transaksi.index");
+
+Route::get("/transaksi/create",
+'TransaksiController@create')->name("transaksi.create");
+
+Route::post("/transaksi",
+'TransaksiController@store')->name("transaksi.store");
+
+Route::get("/transaksi/{id}/edit",
+'TransaksiController@edit')->name("transaksi.edit");
+
+Route::post("/transaksi/{id}",
+'TransaksiController@update')->name("transaksi.update");
+
+Route::get("/transaksi/{id}/delete",
+'TransaksiController@delete')->name("transaksi.delete");
+
+
 
 Route::get('/login',
 'SecurityController@login')->name('login');
