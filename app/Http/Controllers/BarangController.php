@@ -18,10 +18,17 @@ class BarangController extends Controller
 		return view("barang.index", $data);
 	}
 
+    public function show($id)
+    {
+        $barang = Barang::find($id);
+        $data = [ 'barang' => $barang ];
+        return view("barang.lihat", $data);
+    }
+
 	public function create(FormBuilder $formBuilder)
 	{
-		
-		
+
+
 		$form = $formBuilder->create(BarangForm::class, [
 			'method' => 'POST', 'url' => route('barang.store')
 		]);
@@ -57,6 +64,7 @@ class BarangController extends Controller
 		];
 		return view('barang.create', $data);
 	}
+
 	public function update($id, Request $request)
 	{
 			$barang = Barang::find($id);

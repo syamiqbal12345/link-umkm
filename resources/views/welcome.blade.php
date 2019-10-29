@@ -30,8 +30,7 @@
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                
-                <a href="http://127.0.0.1:8000/" class="logo">
+                <a href="/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +49,7 @@
 
             <!-- Navbar Header -->
             <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-                
+
                 <div class="container-fluid">
                     <div class="collapse" id="search-nav">
                         <form class="navbar-left navbar-form nav-search mr-md-3">
@@ -77,7 +76,7 @@
                             <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
                                 <li>
                                     <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                        Messages                                    
+                                        Messages
                                         <a href="#" class="small">Mark all as read</a>
                                     </div>
                                 </li>
@@ -85,7 +84,7 @@
                                     <div class="message-notif-scroll scrollbar-outer">
                                         <div class="notif-center">
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -93,11 +92,11 @@
                                                     <span class="block">
                                                         Hai Iqbal ?
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -105,11 +104,11 @@
                                                     <span class="block">
                                                         Ok, Terima Kasih !
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -117,11 +116,11 @@
                                                     <span class="block">
                                                         Pesan apa bal ?
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -129,7 +128,7 @@
                                                     <span class="block">
                                                         Hi, Apa Kabar Iqbal ?
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -158,7 +157,7 @@
                                                     <span class="block">
                                                         Ada pesan belum terbaca
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -167,18 +166,18 @@
                                                     <span class="block">
                                                         Rahmad menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
                                                         Reza menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -187,7 +186,7 @@
                                                     <span class="block">
                                                         Farrah menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -235,7 +234,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="sidebar sidebar-style-2">           
+        <div class="sidebar sidebar-style-2">
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <div class="user">
@@ -432,25 +431,17 @@
                             <li class="list-group-item">Harga : Rp. {{ $item->harga}}</li>
                         </ul>
                         <div class="card-body">
-                            <a href="http://127.0.0.1:8000/lihat" class="card-link">Lihat</a>
+                            <a href="{{ route("barang.show", ['id' => $item->id ]) }}" class="card-link">Lihat</a>
                             <a href="#" class="card-link">Beli</a>
                         </div>
                     </div>
                 </div>
                 @endforeach
-           
-            </div>
-                
-
-                
-
-                
-
-                
-
 
             </div>
-                
+
+            </div>
+
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -469,7 +460,7 @@
                     </nav>
                     <div class="copyright ml-auto">
                         2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
-                    </div>              
+                    </div>
                 </div>
             </footer>
         </div>

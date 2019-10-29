@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>UMKM</title>
+    <title>Lihat</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="{{ asset('assets/img/icon.ico') }}" type="image/x-icon"/>
+    <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
     <!-- Fonts and icons -->
-    <script src="{{ asset('assets/js/plugin/webfont/webfont.min.js') }}"></script>
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
     <script>
         WebFont.load({
             google: {"families":["Lato:300,400,700,900"]},
@@ -19,18 +19,19 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/atlantis.min.css') }}">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/atlantis.min.css">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
+    <link rel="stylesheet" href="../assets/css/demo.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                <a href="/" class="logo">
+
+                <a href="http://127.0.0.1:8000/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -275,8 +276,7 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <i class="fas fa-home"></i>
-                                <p>HALAMAN UTAMA</p>
+                                <p>LIHAT</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -408,21 +408,120 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Halaman Utama</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                                <h2 class="text-white pb-2 fw-bold">&nbsp;</h2>
+                                <h5 class="text-white op-7 mb-2">&nbsp;</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                                >
                             </div>
                         </div>
                     </div>
                 </div>
+
             <div class="page-inner mt--5">
+           <div class="card mb-3" style="max-width: 1050px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../assets/img/lays.jpg" width="300px" height="400px" class="card-img" alt="gambar">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title pb-10 fw-bold">{{ $barang->nama }}</h5>
+{{--        <p class="card-text">Lay's adalah produk kripik kentang yang terkenal dengan rasa gurih yang luar biasa, nikmati kualitas terbaik dari merek yang sudah diakui secara Internasional. Renyahnya Lays siap hadir di keseharianmu dengan 6 rasa yang menggugah selera</p>--}}
 
-			@yield("content")
+         <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp. {{ $barang->harga }}.-/Pcs</li>
+    </ul>
+        <div class="o-layout o-layout--tiny">
+    <div class="o-layout__item u-4of12 js-qty-field">
+    <div class="c-inp-grp-table">
+        <h5 class="card-sub-title">Jumlah stok : {{ $barang->stok }}</h5>
 
-            </div>
+    </div>
+<div class="container">
+    <div class="button-container">
+        @if($barang->stok > 0)
+            <form action="{{ route('itemtransaksi.store') }}" method="post">
+
+                {{ csrf_field() }}
+                <input type="hidden" name="barang_id" value="{{ $barang->id }}">
+            <select name="jumlah" class="form-control">
+
+                @for($i=1; $i <= $barang->stok; $i++)
+                    <option value="{{ $i }}">{{ $i }}</option>
+                @endfor
+            </select>
+            <button type="submit" class="btn btn-primary"><span>Beli Sekarang</span></button>
+            </form>
+        @endif
+    </div>
+</div>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*--------------------------------Button starts--------------------------------*/
+.button-container {
+  text-align: center;
+}
+.button {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: #D81900;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: #D81900;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.button:focus {
+  outline: none;
+}
+/*--------------------------------Button ends--------------------------------*/
+</style>
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
         <footer class="footer">
                 <div class="container-fluid">
@@ -447,42 +546,41 @@
             </footer>
         </div>
     <!--   Core JS Files   -->
-
-    <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js')}}"></script>
-    <script src="{{ asset('assets/js/core/popper.min.js')}}"></script>
-    <script src="{{ asset('assets/js/core/bootstrap.min.js')}}"></script>
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
 
     <!-- jQuery UI -->
-    <script src="{{ asset('assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')}}"></script>
+    <script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="{{ asset('assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')}}"></script>
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
 
     <!-- Chart JS -->
-    <script src="{{ asset('assets/js/plugin/chart.js/chart.min.js')}}"></script>
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="{{ asset('assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js')}}"></script>
+    <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
 
     <!-- Chart Circle -->
-    <script src="{{ asset('assets/js/plugin/chart-circle/circles.min.js')}}"></script>
+    <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
 
     <!-- Datatables -->
-    <script src="{{ asset('assets/js/plugin/datatables/datatables.min.js')}}"></script>
+    <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
 
     <!-- Bootstrap Notify -->
-    <script src="{{ asset('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+    <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
     <!-- jQuery Vector Maps -->
-    <script src="{{ asset('assets/js/plugin/jqvmap/jquery.vmap.min.js')}}"></script>
-    <script src="{{ asset('assets/js/plugin/jqvmap/maps/jquery.vmap.world.js')}}"></script>
+    <script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
 
     <!-- Sweet Alert -->
-    <script src="{{ asset('assets/js/plugin/sweetalert/sweetalert.min.js')}}"></script>
+    <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
 
     <!-- Atlantis JS -->
-    <script src="{{ asset('assets/js/atlantis.min.js')}}"></script>
+    <script src="../assets/js/atlantis.min.js"></script>
 </body>
 </html>

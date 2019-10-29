@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938be543-56b2-44fa-8f78-da19067bc955" name="Default" comment="">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemTransaksiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemTransaksiController.php" />
       <change beforePath="$PROJECT_DIR$/app/Toko.php" afterPath="$PROJECT_DIR$/app/Toko.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
+>>>>>>> 08093784317c06557609dd4efdb697c21f7237f5
+=======
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemTransaksiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemTransaksiController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Toko.php" afterPath="$PROJECT_DIR$/app/Toko.php" />
+>>>>>>> 73587651b4bc1e4f9e299949744b4b56f29ed10f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,11 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+<<<<<<< HEAD
+    <execution>
+      <executable />
+    </execution>
+=======
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -128,10 +145,14 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> 08093784317c06557609dd4efdb697c21f7237f5
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="PhpWorkspaceProjectConfiguration">
+=======
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -151,6 +172,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+>>>>>>> 08093784317c06557609dd4efdb697c21f7237f5
     <include_path>
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
@@ -249,6 +271,9 @@
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
     </include_path>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="1SrubGlYS8zE6aRQTtiNr6XsrZy" />
+=======
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="4" />
@@ -332,6 +357,7 @@
       <pane id="Scope" />
     </panes>
   </component>
+>>>>>>> 08093784317c06557609dd4efdb697c21f7237f5
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -348,9 +374,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -365,6 +388,25 @@
       <workItem from="1572028159165" duration="104000" />
       <workItem from="1572028481576" duration="538000" />
       <workItem from="1572064569759" duration="2078000" />
+<<<<<<< HEAD
+      <workItem from="1572334107835" duration="1132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
       <workItem from="1572247312874" duration="2264000" />
       <workItem from="1572333831855" duration="2354000" />
     </task>
@@ -646,5 +688,6 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 08093784317c06557609dd4efdb697c21f7237f5
   </component>
 </project>
