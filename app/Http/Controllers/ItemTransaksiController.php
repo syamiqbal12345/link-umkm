@@ -34,9 +34,11 @@ class ItemTransaksiController extends Controller
 	public function store(Request $request)
 	{
 		$user = \Auth::user();
-		$barang = $user->pengguna->barang;
-		$data ['trensaksi_id'] = 0;
-		$data['barang_id'] = $barang;
+
+		$data = $request->all();
+
+        $data ['transaksi_id'] = 0;
+        $data ['barang_id'] = 0;
 
 		$itemtransaksi = new ItemTransaksi();
 		$itemtransaksi->fill($data)->save();
