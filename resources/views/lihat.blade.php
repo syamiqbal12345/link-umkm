@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Makanan Ringan</title>
+    <title>Lihat</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -276,7 +276,7 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <p>MAKANAN RINGAN</p>
+                                <p>LIHAT</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -422,7 +422,7 @@
            <div class="card mb-3" style="max-width: 1050px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="../assets/img/lays.jpg" class="card-img" alt="gambar" height="100%">
+      <img src="../assets/img/lays.jpg" width="300px" height="400px" class="card-img" alt="gambar">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -436,6 +436,9 @@
     <div class="o-layout__item u-4of12 js-qty-field">
     <div class="c-inp-grp-table">
         <h5 class="card-sub-title">
+            <h5 class="card-sub-title">
+            <font color="red">Jumlah stok :</font>
+        </h5>
             <font color="blue">Jumlah yang ingin dipesan :</font>
         </h5>
         <div class="c-inp__btn">
