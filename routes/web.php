@@ -25,8 +25,20 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/transaksi', function () {
+    return view('transaksi');
+});
+
 Route::get('/makananberat', function () {
     return view('makananberat');
+});
+
+Route::get('/lihat', function () {
+    return view('lihat');
+});
+
+Route::get('/riwayat', function () {
+    return view('riwayat');
 });
 
 Route::get('/makananringan', function () {
