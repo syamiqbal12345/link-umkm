@@ -134,6 +134,7 @@ Route::get("/kategori/{id}/delete",
 
 Route::get("/itemtransaksi",
 'ItemTransaksiController@index')->name("itemtransaksi.index");
+Route::post("/item-transaksi-update", 'ItemTransaksiController@updateTransaksi')->name("itemtransaksi.index.update");
 
 Route::get("/itemtransaksi/create",
 'ItemTransaksiController@create')->name("itemtransaksi.create");
@@ -171,8 +172,7 @@ Route::get("/transaksi/{id}/delete",
 
 
 
-Route::get('/login',
-'SecurityController@login')->name('login');
+Route::get('/login','SecurityController@login')->name('login');
 
 Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
 

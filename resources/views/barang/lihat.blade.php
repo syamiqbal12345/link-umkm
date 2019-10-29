@@ -451,7 +451,12 @@
                     <option value="{{ $i }}">{{ $i }}</option>
                 @endfor
             </select>
-            <button type="submit" class="btn btn-primary"><span>Beli Sekarang</span></button>
+                @if(auth()->user() == null)
+                    <a href="{{ route('login') }}" class="btn btn-warning"><span>Registrasi atau Login</span></a>
+                @else
+                    <button type="submit" class="btn btn-primary"><span>Beli Sekarang</span></button>
+                @endif
+
             </form>
         @endif
     </div>

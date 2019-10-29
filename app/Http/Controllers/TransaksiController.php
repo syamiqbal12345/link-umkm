@@ -23,8 +23,8 @@ class TransaksiController extends Controller
 
 	public function create(FormBuilder $formBuilder)
 	{
-		
-		
+
+
 		$form = $formBuilder->create(TransaksiForm::class, [
 			'method' => 'POST', 'url' => route('transaksi.store')
 		]);
