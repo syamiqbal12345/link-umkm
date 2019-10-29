@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\ItemTransaksiForm;
 use App\ItemTransaksi;
@@ -11,6 +12,21 @@ use App\User;
 
 class ItemTransaksiController extends Controller
 {
+    public function updateTransaksi(Request $request)
+    {
+        $action = $request->get("action", "update");
+        if ($action == "update") {
+            foreach ($request->get('item_transaksi') as $id=>$item) {
+                $itemTransaksi = ItemTransaksi::find($id);
+                $itemTransaksi->jumlah = $item['jumlah'];
+                $itemTransaksi->save();
+            }
+
+            return back();
+        }
+
+    }
+
     public function index()
     {
 		$itemtansaksi = ItemTransaksi::all();
@@ -33,10 +49,14 @@ class ItemTransaksiController extends Controller
 
 	public function store(Request $request)
 	{
-		$user = \Auth::user();
-		$barang = $user->pengguna->barang;
-		$data ['trensaksi_id'] = 0;
-		$data['barang_id'] = $barang;
+	    $user = Auth::user();
+	    $pembeli = $user->pengguna;
+		$data = $request->all();
+		$barang = Barang::find($request->get('barang_id'));
+        $data ['transaksi_id'] = 0;
+        $data ['pembeli_id'] = $pembeli->id;
+        $data ['harga'] = $barang->harga;
+        $data ['total'] = $barang->harga * $request->get("jumlah");
 
 		$itemtransaksi = new ItemTransaksi();
 		$itemtransaksi->fill($data)->save();
@@ -47,22 +67,20 @@ class ItemTransaksiController extends Controller
 	{
 		$itemtansaksi = ItemTransaksi::find($id);
 		$form = $formBuilder->create(ItemTransaksiForm::class, [
-			'method' => 'POST', 'url' => route('itemtansaksi.update', ['id' => $id]),
-			'model' => $itemtansaksi
+			'method' => 'POST', 'url' => route('itemtransaksi.update', ['id' => $id]),
+
 		]);
 
 		$data = [
 			'form' => $form
 		];
-		return view('itemtansaksi.create', $data);
+		return view('itemtransaksi.create', $data);
 	}
 	public function update($id, Request $request)
 	{
-			$itemtansaksi = ItemTransaksi::find($id);
-			$itemtansaksi->fill($request->all())->save();
-			return
-		redirect(route('itemtansaksi.index'))->withMessage("Data telah
-		disimpan");
+			$itemtransaksi = ItemTransaksi::find($id);
+			$itemtransaksi->fill($request->all())->save();
+			return redirect(route('itemtransaksi.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function delete($id)

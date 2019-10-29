@@ -30,8 +30,7 @@
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                
-                <a href="http://127.0.0.1:8000" class="logo">
+                <a href="/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +49,7 @@
 
             <!-- Navbar Header -->
             <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-                
+
                 <div class="container-fluid">
                     <div class="collapse" id="search-nav">
                         <form class="navbar-left navbar-form nav-search mr-md-3">
@@ -77,7 +76,7 @@
                             <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
                                 <li>
                                     <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                        Messages                                    
+                                        Messages
                                         <a href="#" class="small">Mark all as read</a>
                                     </div>
                                 </li>
@@ -85,7 +84,7 @@
                                     <div class="message-notif-scroll scrollbar-outer">
                                         <div class="notif-center">
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -93,11 +92,11 @@
                                                     <span class="block">
                                                         Hai Iqbal ?
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -105,11 +104,11 @@
                                                     <span class="block">
                                                         Ok, Terima Kasih !
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -117,11 +116,11 @@
                                                     <span class="block">
                                                         Pesan apa bal ?
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -129,7 +128,7 @@
                                                     <span class="block">
                                                         Hi, Apa Kabar Iqbal ?
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -158,7 +157,7 @@
                                                     <span class="block">
                                                         Ada pesan belum terbaca
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -167,18 +166,18 @@
                                                     <span class="block">
                                                         Rahmad menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
                                                         Reza menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -187,7 +186,7 @@
                                                     <span class="block">
                                                         Farrah menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -235,7 +234,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="sidebar sidebar-style-2">           
+        <div class="sidebar sidebar-style-2">
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <div class="user">
@@ -420,11 +419,11 @@
                     </div>
                 </div>
             <div class="page-inner mt--5">
-			
+
 			@yield("content")
 
             </div>
-                
+
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -443,46 +442,47 @@
                     </nav>
                     <div class="copyright ml-auto">
                         2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
-                    </div>              
+                    </div>
                 </div>
             </footer>
         </div>
     <!--   Core JS Files   -->
-    <script src="{{ asset/assets/js/core/jquery.3.2.1.min.js"></script>
-    <script src="{{ asset/assets/js/core/popper.min.js"></script>
-    <script src="{{ asset/assets/js/core/bootstrap.min.js"></script>
+
+    <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js')}}"></script>
+    <script src="{{ asset('assets/js/core/popper.min.js')}}"></script>
+    <script src="{{ asset('assets/js/core/bootstrap.min.js')}}"></script>
 
     <!-- jQuery UI -->
-    <script src="{{ asset/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script src="{{ asset/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')}}"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="{{ asset/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')}}"></script>
 
 
     <!-- Chart JS -->
-    <script src="{{ asset/assets/js/plugin/chart.js/chart.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/chart.js/chart.min.js')}}"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="{{ asset/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js')}}"></script>
 
     <!-- Chart Circle -->
-    <script src="{{ asset/assets/js/plugin/chart-circle/circles.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/chart-circle/circles.min.js')}}"></script>
 
     <!-- Datatables -->
-    <script src="{{ asset/assets/js/plugin/datatables/datatables.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/datatables/datatables.min.js')}}"></script>
 
     <!-- Bootstrap Notify -->
-    <script src="{{ asset/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
 
     <!-- jQuery Vector Maps -->
-    <script src="{{ asset/assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-    <script src="{{ asset/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="{{ asset('assets/js/plugin/jqvmap/jquery.vmap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/plugin/jqvmap/maps/jquery.vmap.world.js')}}"></script>
 
     <!-- Sweet Alert -->
-    <script src="{{ asset/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/sweetalert/sweetalert.min.js')}}"></script>
 
     <!-- Atlantis JS -->
-    <script src="{{ asset/assets/js/atlantis.min.js"></script>
+    <script src="{{ asset('assets/js/atlantis.min.js')}}"></script>
 </body>
 </html>
