@@ -412,8 +412,7 @@
                                 <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
-                                <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-                                <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
+                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
                             </div>
                         </div>
                     </div>

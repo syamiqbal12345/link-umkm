@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Lain - Lain</title>
+    <title>Lihat</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -30,8 +30,8 @@
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                
-                <a href="index.html" class="logo">
+
+                <a href="http://127.0.0.1:8000/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 
             <!-- Navbar Header -->
             <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-                
+
                 <div class="container-fluid">
                     <div class="collapse" id="search-nav">
                         <form class="navbar-left navbar-form nav-search mr-md-3">
@@ -77,7 +77,7 @@
                             <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
                                 <li>
                                     <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                        Messages                                    
+                                        Messages
                                         <a href="#" class="small">Mark all as read</a>
                                     </div>
                                 </li>
@@ -85,7 +85,7 @@
                                     <div class="message-notif-scroll scrollbar-outer">
                                         <div class="notif-center">
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -93,11 +93,11 @@
                                                     <span class="block">
                                                         Hai Iqbal ?
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -105,11 +105,11 @@
                                                     <span class="block">
                                                         Ok, Terima Kasih !
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -117,11 +117,11 @@
                                                     <span class="block">
                                                         Pesan apa bal ?
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -129,7 +129,7 @@
                                                     <span class="block">
                                                         Hi, Apa Kabar Iqbal ?
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -158,7 +158,7 @@
                                                     <span class="block">
                                                         Ada pesan belum terbaca
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -167,18 +167,18 @@
                                                     <span class="block">
                                                         Rahmad menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
                                                         Reza menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -187,7 +187,7 @@
                                                     <span class="block">
                                                         Farrah menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -235,7 +235,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="sidebar sidebar-style-2">           
+        <div class="sidebar sidebar-style-2">
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <div class="user">
@@ -276,7 +276,7 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <p>LAIN - LAIN</p>
+                                <p>LIHAT</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -408,8 +408,8 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Lain - Lain</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                                <h2 class="text-white pb-2 fw-bold">&nbsp;</h2>
+                                <h5 class="text-white op-7 mb-2">&nbsp;</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
@@ -417,91 +417,112 @@
                         </div>
                     </div>
                 </div>
+
             <div class="page-inner mt--5">
-                <div class="card" style="width: 18rem;">
-    <img src="../assets/img/bawangputih.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Bawang Putih</h5>
-                <p class="card-text">
-                Bawang Putih adalah bumbu dapur yang digunakan untuk menjadi bumbum dari kebanyakan makanan.
-            </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.22.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
+           <div class="card mb-3" style="max-width: 1050px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../assets/img/lays.jpg" width="300px" height="400px" class="card-img" alt="gambar">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title pb-10 fw-bold">{{ $barang->nama }}</h5>
+{{--        <p class="card-text">Lay's adalah produk kripik kentang yang terkenal dengan rasa gurih yang luar biasa, nikmati kualitas terbaik dari merek yang sudah diakui secara Internasional. Renyahnya Lays siap hadir di keseharianmu dengan 6 rasa yang menggugah selera</p>--}}
+
+         <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga : Rp. {{ $barang->harga }}.-/Pcs</li>
+    </ul>
+        <div class="o-layout o-layout--tiny">
+    <div class="o-layout__item u-4of12 js-qty-field">
+    <div class="c-inp-grp-table">
+        <h5 class="card-sub-title">Jumlah stok : {{ $barang->stok }}</h5>
+
+    </div>
+<div class="container">
+    <div class="button-container">
+        @if($barang->stok > 0)
+            <form action="{{ route('itemtransaksi.store') }}" method="post">
+
+                {{ csrf_field() }}
+                <input type="hidden" name="barang_id" value="{{ $barang->id }}">
+            <select name="jumlah" class="form-control">
+
+                @for($i=1; $i <= $barang->stok; $i++)
+                    <option value="{{ $i }}">{{ $i }}</option>
+                @endfor
+            </select>
+            <button type="submit" class="btn btn-primary"><span>Beli Sekarang</span></button>
+            </form>
+        @endif
+    </div>
+</div>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*--------------------------------Button starts--------------------------------*/
+.button-container {
+  text-align: center;
+}
+.button {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: #D81900;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: #D81900;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.button:focus {
+  outline: none;
+}
+/*--------------------------------Button ends--------------------------------*/
+</style>
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/gula.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Gula</h5>
-                <p class="card-text">
-                Gula adalah bahan dapur yang digunakan untuk memaniskan makanan dan minuman.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.12.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/kecap.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Kecap Manis</h5>
-                <p class="card-text">
-                Kecap Manis adalah bahan makanan yang dipergunakan untuk memaniskan makanan tersebut.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.8.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/kemiri.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Kemiri</h5>
-                <p class="card-text">
-                Kemiri adalah bumbu dapur yang digunakan untuk menjadi bumbu atau penyedap rasa dari kebanyakan makanan.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.9.000.-/Ons</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/Teh.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Teh Seduh</h5>
-                <p class="card-text">
-                Teh Seduh adalah daun teh yang sudah dibuat sedemikian rupa agar saat menginginkan teh hanya tingal diseduh saja.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.10.000.-/Kotak</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -520,7 +541,7 @@
                     </nav>
                     <div class="copyright ml-auto">
                         2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
-                    </div>              
+                    </div>
                 </div>
             </footer>
         </div>

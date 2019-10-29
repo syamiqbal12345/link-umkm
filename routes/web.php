@@ -25,8 +25,20 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/transaksi', function () {
+    return view('transaksi');
+});
+
 Route::get('/makananberat', function () {
     return view('makananberat');
+});
+
+Route::get('/lihat', function () {
+    return view('lihat');
+});
+
+Route::get('/riwayat', function () {
+    return view('riwayat');
 });
 
 Route::get('/makananringan', function () {
@@ -85,23 +97,19 @@ Route::get("/toko/{id}/delete",
 
 
 
-Route::get("/barang",
-'BarangController@index')->name("barang.index");
+Route::get("/barang", 'BarangController@index')->name("barang.index");
 
-Route::get("/barang/create",
-'BarangController@create')->name("barang.create");
+Route::get("/barang/create", 'BarangController@create')->name("barang.create");
 
-Route::post("/barang",
-'BarangController@store')->name("barang.store");
+Route::post("/barang", 'BarangController@store')->name("barang.store");
 
-Route::get("/barang/{id}/edit",
-'BarangController@edit')->name("barang.edit");
+Route::get("/barang/{id}/edit", 'BarangController@edit')->name("barang.edit");
 
-Route::post("/barang/{id}",
-'BarangController@update')->name("barang.update");
+Route::post("/barang/{id}", 'BarangController@update')->name("barang.update");
 
-Route::get("/barang/{id}/delete",
-'BarangController@delete')->name("barang.delete");
+Route::get("/barang/{id}/delete", 'BarangController@delete')->name("barang.delete");
+
+Route::get("/barang/{id}", 'BarangController@show')->name("barang.show");
 
 
 

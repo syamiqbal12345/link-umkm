@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Lain - Lain</title>
+    <title>UMKM</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 
-                <a href="index.html" class="logo">
+                <a href="http://127.0.0.1:8000/" class="logo">
                     <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,7 +276,8 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <p>LAIN - LAIN</p>
+                                <i class="fas fa-home"></i>
+                                <p>HALAMAN UTAMA</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -408,8 +409,8 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Lain - Lain</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                                <h2 class="text-white pb-2 fw-bold">Riwayat Transaksi</h2>
+                                <h5 class="text-white op-7 mb-2">Terima Kasih Telah Mempercayai Kami :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
@@ -418,90 +419,36 @@
                     </div>
                 </div>
             <div class="page-inner mt--5">
-                <div class="card" style="width: 18rem;">
-    <img src="../assets/img/bawangputih.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Bawang Putih</h5>
-                <p class="card-text">
-                Bawang Putih adalah bumbu dapur yang digunakan untuk menjadi bumbum dari kebanyakan makanan.
-            </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.22.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/gula.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Gula</h5>
-                <p class="card-text">
-                Gula adalah bahan dapur yang digunakan untuk memaniskan makanan dan minuman.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.12.000.-/Kg</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/kecap.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Kecap Manis</h5>
-                <p class="card-text">
-                Kecap Manis adalah bahan makanan yang dipergunakan untuk memaniskan makanan tersebut.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.8.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/kemiri.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Kemiri</h5>
-                <p class="card-text">
-                Kemiri adalah bumbu dapur yang digunakan untuk menjadi bumbu atau penyedap rasa dari kebanyakan makanan.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.9.000.-/Ons</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/Teh.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Teh Seduh</h5>
-                <p class="card-text">
-                Teh Seduh adalah daun teh yang sudah dibuat sedemikian rupa agar saat menginginkan teh hanya tingal diseduh saja.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.10.000.-/Kotak</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
+<body>
+    <table border="1">
+    <tr align="center" bgcolor="white">
+    <th width="50px">No</th>
+    <th width="150px">Nama Barang</th>
+    <th width="100px">Harga</th>
+    <th width="50px">Jumlah Barang</th>
+    <th width="100px">Total Harga</th>
+          
+    </tr>
+ 
+    <tr>
+    <td align="center">1</td>
+    <td>Kacang</td>
+    <td>10000</td>
+    <td>1</td>
+    <td>10000</td>
+    </tr>
+ 
+    <tr>
+    <td align="center">2</td>
+    <td>Pepsodent</td>
+    <td>13500</td>
+    <td>2</td>
+    <td>17000</td>
+    </tr>
+    </table>
+</body>
+            </div>
+                
         <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
