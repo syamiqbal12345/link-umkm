@@ -80,11 +80,17 @@ class BarangController extends Controller
 
 	public function update($id, Request $request)
 	{
-			$barang = Barang::find($id);
-			$barang->fill($request->all())->save();
-			return
-		redirect(route('barang.index'))->withMessage("Data telah
-		disimpan");
+        $barang = Barang::find($id);
+        $data = $request->all();
+
+        if (request()->has('foto')){
+            $ext = $request->foto->extension();
+            $namaFile = sprintf("%d.%s", time(), $ext);
+            $nama = request()->foto->store('images', 'public');
+            $data['foto'] = $nama;
+        }
+        $barang->fill($data)->save();
+        return redirect(route('barang.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function delete($id)
