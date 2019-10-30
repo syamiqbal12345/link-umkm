@@ -6,10 +6,7 @@
 			<div class="card-title">
 				Transaksi ({{ $transaksi->count() }})
 			</div>
-
-
 		</div>
-
 		<div class="card-body">
 		<table class="table table-bordered">
 		<thead>

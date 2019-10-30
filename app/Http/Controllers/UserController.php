@@ -33,7 +33,7 @@ class UserController extends Controller
 	{
 		
 		$data=$request->all();
-		$data['level']='pembeli';
+		$data['level']='pembeli,kurir';
 		$user = new User();
 		$user->fill($data)->save();
 
@@ -42,7 +42,7 @@ class UserController extends Controller
 		$pengguna->user_id=$user->id;
 		$pengguna->save();
 
-		return redirect(route('user.index'))->withMessage("Data telah disimpan");
+		return redirect(route('welcome.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function edit($id, FormBuilder $formBuilder)
