@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 <a href="/" class="logo">
-                    <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ assets('assets/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -210,19 +210,18 @@
                                             <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>M Iqbal</h4>
-                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="/edit" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">My Profile</a>
-                                        <a class="dropdown-item" href="#">My Balance</a>
-                                        <a class="dropdown-item" href="#">Inbox</a>
+                                        <a class="dropdown-item" href="/edit">My Profile</a>
+                                        <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Account Setting</a>
+                                        <a class="dropdown-item" href="/logout">Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Logout</a>
+                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>

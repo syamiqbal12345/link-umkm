@@ -26,6 +26,14 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/edit', function () {
+    return view('edit');
+});
+
+Route::get('/coba', function () {
+    return view('coba');
+});
+
 Route::get('/transaksi', function () {
     return view('transaksi');
 });
