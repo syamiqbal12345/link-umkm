@@ -422,7 +422,7 @@
                 @foreach($data_barang as $item)
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="{{ asset('images/'.$item->foto) }}" class="card-img-top" alt="gambar">
+                        <img src="{{ asset('storage/'.$item->foto) }}" class="card-img-top" alt="gambar">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $item->nama}}</h5>
                                 <p>{{ $item->toko->nama}}</p>

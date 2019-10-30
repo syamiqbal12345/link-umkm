@@ -6,6 +6,8 @@
 /public/storage
 /storage/*.key
 /vendor
+/storage
+/storage/**
 .env
 .env.backup
 .phpunit.result.cache
@@ -13,3 +15,4 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+storage

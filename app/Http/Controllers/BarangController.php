@@ -45,19 +45,19 @@ class BarangController extends Controller
 //            $namaFile = sprintf("%d.%s", time(), $ext);
 //            $request->foto->move(public_path('images'), $namaFile);
 //        }
+        $user = \Auth::user();
+        $toko = $user->pengguna->toko;
+        $data = $request->all();
 
         if (request()->has('foto')){
-                        $ext = $request->foto->extension();
+                    $ext = $request->foto->extension();
             $namaFile = sprintf("%d.%s", time(), $ext);
-            request()->foto->store('images', 'public');
-
+            $nama = request()->foto->store('images', 'public');
+            $data['foto'] = $nama;
         }
 
-		$user = \Auth::user();
-		$toko = $user->pengguna->toko;
-		$data = $request->all();
+
 		$data['toko_id'] = $toko->id;
-		$data['foto'] = $namaFile;
 
 		$barang = new Barang();
 		$barang->fill($data)->save();
