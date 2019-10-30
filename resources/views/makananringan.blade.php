@@ -71,76 +71,6 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown hidden-caret">
-                            <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                            <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
-                                <li>
-                                    <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                        Messages                                    
-                                        <a href="#" class="small">Mark all as read</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="message-notif-scroll scrollbar-outer">
-                                        <div class="notif-center">
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Farid Majid</span>
-                                                    <span class="block">
-                                                        Hai Iqbal ?
-                                                    </span>
-                                                    <span class="time">5 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Dewi Dian</span>
-                                                    <span class="block">
-                                                        Ok, Terima Kasih !
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Wiliam Aryanda</span>
-                                                    <span class="block">
-                                                        Pesan apa bal ?
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Wulan Fitri Anjaswati</span>
-                                                    <span class="block">
-                                                        Hi, Apa Kabar Iqbal ?
-                                                    </span>
-                                                    <span class="time">17 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown hidden-caret">
                             <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="notification">4</span>
@@ -211,19 +141,18 @@
                                             <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>M Iqbal</h4>
-                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="/edit" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">My Profile</a>
-                                        <a class="dropdown-item" href="#">My Balance</a>
-                                        <a class="dropdown-item" href="#">Inbox</a>
+                                        <a class="dropdown-item" href="/edit">My Profile</a>
+                                        <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Account Setting</a>
+                                        <a class="dropdown-item" href="/logout">Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Logout</a>
+                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>

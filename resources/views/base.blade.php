@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 <a href="/" class="logo">
-                    <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ assets('assets/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -217,7 +217,11 @@
                                     <li>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/edit">My Profile</a>
+                                        <a class="dropdown-item" href="/login">Login</a>
+                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
