@@ -27,8 +27,6 @@ class BarangController extends Controller
 
 	public function create(FormBuilder $formBuilder)
 	{
-
-
 		$form = $formBuilder->create(BarangForm::class, [
 			'method' => 'POST', 'url' => route('barang.store')
 		]);
@@ -41,9 +39,24 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
-		$user = \Auth::user();
-		$toko = $user->pengguna->toko;
-		$data = $request->all();
+
+//	    if ($request->foto != null) {
+//            $ext = $request->foto->extension();
+//            $namaFile = sprintf("%d.%s", time(), $ext);
+//            $request->foto->move(public_path('images'), $namaFile);
+//        }
+        $user = \Auth::user();
+        $toko = $user->pengguna->toko;
+        $data = $request->all();
+
+        if (request()->has('foto')){
+                    $ext = $request->foto->extension();
+            $namaFile = sprintf("%d.%s", time(), $ext);
+            $nama = request()->foto->store('images', 'public');
+            $data['foto'] = $nama;
+        }
+
+
 		$data['toko_id'] = $toko->id;
 
 		$barang = new Barang();
@@ -67,11 +80,17 @@ class BarangController extends Controller
 
 	public function update($id, Request $request)
 	{
-			$barang = Barang::find($id);
-			$barang->fill($request->all())->save();
-			return
-		redirect(route('barang.index'))->withMessage("Data telah
-		disimpan");
+        $barang = Barang::find($id);
+        $data = $request->all();
+
+        if (request()->has('foto')){
+            $ext = $request->foto->extension();
+            $namaFile = sprintf("%d.%s", time(), $ext);
+            $nama = request()->foto->store('images', 'public');
+            $data['foto'] = $nama;
+        }
+        $barang->fill($data)->save();
+        return redirect(route('barang.index'))->withMessage("Data telah disimpan");
 	}
 
 	public function delete($id)
