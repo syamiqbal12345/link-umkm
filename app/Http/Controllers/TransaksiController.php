@@ -22,7 +22,7 @@ class TransaksiController extends Controller
 
     public function myTransaction()
     {
-        $transaksi = Transaksi::where("pembeli_id", \auth()->user()->pengguna->id);
+        $transaksi = Transaksi::where("pembeli_id", \auth()->user()->pengguna->id)->get();
 
         $data = [ 'transaksi' => $transaksi ];
         return view("transaksi.index", $data);

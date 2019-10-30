@@ -11,7 +11,6 @@
 		</div>
 
 		<div class="card-body">
-            {{ $transaksi }}
 		<table class="table table-bordered">
 		<thead>
 			<tr>
