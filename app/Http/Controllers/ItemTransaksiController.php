@@ -61,6 +61,8 @@ class ItemTransaksiController extends Controller
                 $item->transaksi_id = $transaksi->id;
                 $item->save();
             }
+
+            return redirect(route("transaksi.my"));
         }
 
     }

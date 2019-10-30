@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/atlantis.min.css') }}">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
+
+    @if(auth()->user())
+        <data user-data="{{ auth()->user()->pengguna->id }}"></data>
+    @endif
     <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
 </head>
 <body>
