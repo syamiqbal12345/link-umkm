@@ -9,10 +9,7 @@
 					<a style="color:#fff" href="{{ route("barang.create") }}" class="btn btn-primary">Tambah</a>
 				</div>
 			</div>
-			
-				
 		</div>
-	
 		<div class="card-body">
 		<table class="table table-bordered">
 		<thead>
