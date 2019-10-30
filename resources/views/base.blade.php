@@ -283,8 +283,11 @@
                                 <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
-                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                                >
+                                @if(auth()->user())
+                                    @if(auth()->user()->pengguna->toko->count() ==0)
+                                        <a href="{{ route("toko.create") }}" class="btn btn-secondary btn-round">Buka Toko</a>
+                                    @endif
+                                @endif
                             </div>
                         </div>
                     </div>
