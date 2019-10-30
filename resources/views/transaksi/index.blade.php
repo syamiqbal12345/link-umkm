@@ -5,9 +5,6 @@
 		<div class="card-body">
 			<div class="card-title">
 				Transaksi
-				<div class="pull-right">
-					<a style="color:#fff" href="{{ route("transaksi.create") }}" class="btn btn-primary">Tambah</a>
-				</div>
 			</div>
 			
 				

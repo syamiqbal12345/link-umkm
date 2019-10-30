@@ -5,13 +5,8 @@
 		<div class="card-body">
 			<div class="card-title">
 				Item Transaksi
-				<div class="pull-right">
-					<a style="color:#fff" href="{{ route("itemtransaksi.create") }}" class="btn btn-primary">Tambah</a>
-				</div>
 			</div>
-
 		</div>
-
 		<div class="card-body">
             <form action="{{ route('itemtransaksi.index.update') }}" method="post">
                 {{ csrf_field() }}

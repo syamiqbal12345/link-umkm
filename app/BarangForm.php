@@ -14,7 +14,7 @@ class BarangForm extends Form
 		->add("nama")
 		->add("harga")
 		->add("stok")
-		->add("foto")
+		->add("foto", 'file')
 		->add('Simpan', 'submit');
     }
 }

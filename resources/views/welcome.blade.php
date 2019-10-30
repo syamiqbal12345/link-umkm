@@ -210,19 +210,19 @@
                                             <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>M Iqbal</h4>
-                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="/edit" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">My Profile</a>
-                                        <a class="dropdown-item" href="#">My Balance</a>
-                                        <a class="dropdown-item" href="#">Inbox</a>
+                                        <a class="dropdown-item" href="/edit">My Profile</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Account Setting</a>
+                                        <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Logout</a>
+                                        <a class="dropdown-item" href="/logout">Logout</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
@@ -388,10 +388,23 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
+                                        <a class="collapse" href="#">
+                                            <span class="sub-item">Kurir</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse" href="/itemtransaksi">
+                                            <span class="sub-item">Keranjang</span>
+                                        </a>
+                                    <li>
+                                        <a class="collapse" href="/transaksi">
+                                            <span class="sub-item">Riwayat Transaksi</span>
+                                        </a>
+                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
-                                    </li>
+                                    <li>
                                     </li>
                                 </ul>
                             </div>
@@ -422,7 +435,7 @@
                 @foreach($data_barang as $item)
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="{{ $item->foto}}" class="card-img-top" alt="gambar">
+                        <img src="{{ asset('storage/'.$item->foto) }}" class="card-img-top" alt="gambar">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $item->nama}}</h5>
                                 <p>{{ $item->toko->nama}}</p>
@@ -431,8 +444,7 @@
                             <li class="list-group-item">Harga : Rp. {{ $item->harga}}</li>
                         </ul>
                         <div class="card-body">
-                            <a href="{{ route("barang.show", ['id' => $item->id ]) }}" class="card-link">Lihat</a>
-                            <a href="#" class="card-link">Beli</a>
+                            <a href="{{ route("barang.show", ['id' => $item->id ]) }}" class="btn btn-success btn-sm">Detail</a>
                         </div>
                     </div>
                 </div>

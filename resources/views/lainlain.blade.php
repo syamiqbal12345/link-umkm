@@ -218,12 +218,12 @@
                                     <li>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">My Profile</a>
-                                        <a class="dropdown-item" href="#">My Balance</a>
-                                        <a class="dropdown-item" href="#">Inbox</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Account Setting</a>
+                                        <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Logout</a>
+                                        <a class="dropdown-item" href="/logout">Logout</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
@@ -388,10 +388,23 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
+                                        <a class="collapse" href="#">
+                                            <span class="sub-item">Kurir</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse" href="/itemtransaksi">
+                                            <span class="sub-item">Keranjang</span>
+                                        </a>
+                                    <li>
+                                        <a class="collapse" href="/transaksi">
+                                            <span class="sub-item">Riwayat Transaksi</span>
+                                        </a>
+                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
-                                    </li>
+                                    <li>
                                     </li>
                                 </ul>
                             </div>
