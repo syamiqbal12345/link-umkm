@@ -23,7 +23,10 @@ Route::get('/', function () {
 
 
 
-Route::get('/login', function () { return view('login'); });
+
+Route::get('/edit', function () {return view('edit'); });
+
+
 
 Route::get('/transaksi', function () { return view('transaksi'); });
 

@@ -31,8 +31,8 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 
-                <a href="index.html" class="logo">
-                    <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                <a href="/" class="logo">
+                    <img src="{{ asset('asset/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -71,134 +71,6 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown hidden-caret">
-                            <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                            <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
-                                <li>
-                                    <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                        Messages                                    
-                                        <a href="#" class="small">Mark all as read</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="message-notif-scroll scrollbar-outer">
-                                        <div class="notif-center">
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Farid Majid</span>
-                                                    <span class="block">
-                                                        Hai Iqbal ?
-                                                    </span>
-                                                    <span class="time">5 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Dewi Dian</span>
-                                                    <span class="block">
-                                                        Ok, Terima Kasih !
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Wiliam Aryanda</span>
-                                                    <span class="block">
-                                                        Pesan apa bal ?
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="subject">Wulan Fitri Anjaswati</span>
-                                                    <span class="block">
-                                                        Hi, Apa Kabar Iqbal ?
-                                                    </span>
-                                                    <span class="time">17 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown hidden-caret">
-                            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-bell"></i>
-                                <span class="notification">4</span>
-                            </a>
-                            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
-                                <li>
-                                    <div class="dropdown-title">You have 4 new notification</div>
-                                </li>
-                                <li>
-                                    <div class="notif-scroll scrollbar-outer">
-                                        <div class="notif-center">
-                                            <a href="#">
-                                                <div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
-                                                <div class="notif-content">
-                                                    <span class="block">
-                                                        Ada pesan belum terbaca
-                                                    </span>
-                                                    <span class="time">5 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-icon notif-success"> <i class="fa fa-comment"></i> </div>
-                                                <div class="notif-content">
-                                                    <span class="block">
-                                                        Rahmad menggirim pesan untuk kamu
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-img"> 
-                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
-                                                </div>
-                                                <div class="notif-content">
-                                                    <span class="block">
-                                                        Reza menggirim pesan untuk kamu
-                                                    </span>
-                                                    <span class="time">12 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
-                                                <div class="notif-content">
-                                                    <span class="block">
-                                                        Farrah menggirim pesan untuk kamu
-                                                    </span>
-                                                    <span class="time">17 minutes ago</span> 
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown hidden-caret">
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <div class="avatar-sm">
                                     <img src="../assets/img/profile4.jpg" alt="..." class="avatar-img rounded-circle">
@@ -211,7 +83,7 @@
                                             <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>M Iqbal</h4>
-                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                                <p class="text-muted">iqbal.syam12@gmail.com</p><a href="/edit" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                             </div>
                                         </div>
                                     </li>

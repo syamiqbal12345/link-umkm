@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>UMKM</title>
+    <title>Data Diri</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -21,6 +21,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/atlantis.min.css">
+    <link rel="stylesheet" href="../assets/css/css biodata.css">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="../assets/css/demo.css">
@@ -89,12 +90,11 @@
                                     <li>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/edit">My Profile</a>
-                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
+                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
@@ -118,16 +118,36 @@
                                 <span>
                                     M Iqbal
                                     <span class="user-level">User</span>
+                                    <span class="caret"></span>
                                 </span>
                             </a>
                             <div class="clearfix"></div>
+
+                            <div class="collapse in" id="collapseExample">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#profile">
+                                            <span class="link-collapse">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#edit">
+                                            <span class="link-collapse">Edit Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#settings">
+                                            <span class="link-collapse">Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <i class="fas fa-home"></i>
-                                <p>HALAMAN UTAMA</p>
+                                <p>DATA DIRI</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -145,44 +165,28 @@
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a class="nav-link" href="/makananberat">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/makananberat">
                                             <span class="sub-item">Makanan Berat</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/makananringan">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/makananringan">
                                             <span class="sub-item">Makanan Ringan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/minuman">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/minuman">
                                             <span class="sub-item">Minuman</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/kerajinan">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/kerajinan">
                                             <span class="sub-item">Kerajinan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/lainlain">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/lainlain">
                                             <span class="sub-item">Lain - lain</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#tables">
-                                <i class="fas fa-home"></i>
-                                <p>Toko</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="tables">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a class="nav-link" href="/toko">
-                                            <span class="sub-item">Daftar Toko</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -255,23 +259,10 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a class="collapse" href="#">
-                                            <span class="sub-item">Kurir</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="collapse" href="/itemtransaksi">
-                                            <span class="sub-item">Keranjang</span>
-                                        </a>
-                                    <li>
-                                        <a class="collapse" href="/transaksi">
-                                            <span class="sub-item">Riwayat Transaksi</span>
-                                        </a>
-                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
-                                    <li>
+                                    </li>
                                     </li>
                                 </ul>
                             </div>
@@ -287,62 +278,57 @@
                 <div class="panel-header bg-primary-gradient">
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-                            <div>
-                                <h2 class="text-white pb-2 fw-bold">Halaman Utama</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
-                            </div>
-                            <div class="ml-md-auto py-2 py-md-0">
-                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-            <div class="page-inner mt--5">
-            <div class="row">
-                @foreach($data_barang as $item)
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="{{ asset('storage/'.$item->foto) }}" class="card-img-top" alt="gambar">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $item->nama}}</h5>
-                                <p>{{ $item->toko->nama}}</p>
-                            </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Harga : Rp. {{ $item->harga}}</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="{{ route("barang.show", ['id' => $item->id ]) }}" class="btn btn-success btn-sm">Detail</a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+            <body>
+    <form action="#" style="width: 1000px"class="posisi";>
+    <fieldset class="h"/>
+    <table style="width: 980px;">
+    <tr>
+        <td rowspan="15" width="250px">
+            <img src="../assets/img/iqbal.jpg" width="250px" height="420px"/>
+        </td>
+    </tr>
+    <tr>
+            <td><b>Nama</b></td>
+            <td>:</td>
+            <td>Muhammad Iqbal Syamwardana</td>
+    </tr>
+    <tr>
+            <td><b>Nomor KTP</b></td>
+            <td>:</td>
+            <td>640002472627736</td>
+    </tr>
+    <tr>
+            <td><b>Jenis Kelamin</b></td>
+            <td>:</td>
+            <td>Laki - Laki</td>
+    </tr>
+    <tr>
+            <td><b>Email</b></td>
+            <td>:</td>
+            <td>syamiqbal1234@gmail.com</td>
+    </tr>
+    <tr>
+            <td><b>Alamat</b></td>
+            <td>:</td>
+            <td>Jalan.Pesugihan, Komplek Harapan Baru, Samarinda Sebrang, Kalimantan Timur</td>
+    <tr>
+            <td><b>Kurir Id</b></td>
+            <td>:</td>
+ <td colspan="1" align="left">
+ Ingin Jadi Kurir? <a href="Detail.html"style="text-decoration: none;" target="_parent"><input
+ type="button" class="btn btn-success"value="Come Join Us "/></a>
+ </td>
+ </tr>
+ </table>
+ </fieldset>
+ </form>
+ </body>
+ </div>
+</div>
 
-            </div>
-
-            </div>
-
-        <footer class="footer">
-                <div class="container-fluid">
-                    <nav class="pull-left">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Al-Khawarizmi Team
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../assets/html/CS.html">
-                                    Help
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="copyright ml-auto">
-                        2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
-                    </div>
-                </div>
-            </footer>
-        </div>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
