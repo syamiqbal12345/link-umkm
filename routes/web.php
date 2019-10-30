@@ -140,32 +140,20 @@ Route::get("/itemtransaksi/{id}/delete",
 'ItemTransaksiController@delete')->name("itemtransaksi.delete");
 
 
-Route::get("/transaksi",
-'TransaksiController@index')->name("transaksi.index");
-
-Route::get("/transaksi/create",
-'TransaksiController@create')->name("transaksi.create");
-
-Route::post("/transaksi",
-'TransaksiController@store')->name("transaksi.store");
-
-Route::get("/transaksi/{id}/edit",
-'TransaksiController@edit')->name("transaksi.edit");
-
-Route::post("/transaksi/{id}",
-'TransaksiController@update')->name("transaksi.update");
-
-Route::get("/transaksi/{id}/delete",
-'TransaksiController@delete')->name("transaksi.delete");
+Route::get("/transaksi", 'TransaksiController@index')->name("transaksi.index");
+Route::get("/transaksi/create", 'TransaksiController@create')->name("transaksi.create");
+Route::post("/transaksi", 'TransaksiController@store')->name("transaksi.store");
+Route::get("/transaksi/{id}/edit", 'TransaksiController@edit')->name("transaksi.edit");
+Route::post("/transaksi/{id}", 'TransaksiController@update')->name("transaksi.update");
+Route::get("/transaksi/{id}/delete", 'TransaksiController@delete')->name("transaksi.delete");
+Route::get("/transaksi/{id}/show", 'TransaksiController@show')->name("transaksi.show");
+Route::get("/my-transaksi", 'TransaksiController@myTransaction')->name("transaksi.my");
 
 
 
 Route::get('/login','SecurityController@login')->name('login');
-
 Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
-
 Route::get('/logout', 'SecurityController@logout')->name('login');
-
 Route::get('/logout', 'SecurityController@logout');
 
 
