@@ -40,10 +40,17 @@ class BarangController extends Controller
 	public function store(Request $request)
 	{
 
-	    if ($request->foto != null) {
-            $ext = $request->foto->extension();
+//	    if ($request->foto != null) {
+//            $ext = $request->foto->extension();
+//            $namaFile = sprintf("%d.%s", time(), $ext);
+//            $request->foto->move(public_path('images'), $namaFile);
+//        }
+
+        if (request()->has('foto')){
+                        $ext = $request->foto->extension();
             $namaFile = sprintf("%d.%s", time(), $ext);
-            $request->foto->move(public_path('images'), $namaFile);
+            request()->foto->store('images', 'public');
+
         }
 
 		$user = \Auth::user();
