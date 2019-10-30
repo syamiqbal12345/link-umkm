@@ -23,10 +23,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/atlantis.min.css') }}">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-
-    @if(auth()->user())
-        <data user-data="{{ auth()->user()->pengguna->id }}"></data>
-    @endif
     <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
 </head>
 <body>
@@ -35,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 <a href="/" class="logo">
-                    <img src="{{ asset('asset/img/21.png') }}" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ asset('assets/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
