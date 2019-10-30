@@ -27,8 +27,6 @@ class BarangController extends Controller
 
 	public function create(FormBuilder $formBuilder)
 	{
-
-
 		$form = $formBuilder->create(BarangForm::class, [
 			'method' => 'POST', 'url' => route('barang.store')
 		]);
@@ -41,10 +39,18 @@ class BarangController extends Controller
 
 	public function store(Request $request)
 	{
+
+	    if ($request->foto != null) {
+            $ext = $request->foto->extension();
+            $namaFile = sprintf("%d.%s", time(), $ext);
+            $request->foto->move(public_path('images'), $namaFile);
+        }
+
 		$user = \Auth::user();
 		$toko = $user->pengguna->toko;
 		$data = $request->all();
 		$data['toko_id'] = $toko->id;
+		$data['foto'] = $namaFile;
 
 		$barang = new Barang();
 		$barang->fill($data)->save();
