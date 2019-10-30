@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 <a href="/" class="logo">
-                    <img src="../assets/img/21.png" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ asset('asset/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -117,30 +117,9 @@
                                 <span>
                                     M Iqbal
                                     <span class="user-level">User</span>
-                                    <span class="caret"></span>
                                 </span>
                             </a>
                             <div class="clearfix"></div>
-
-                            <div class="collapse in" id="collapseExample">
-                                <ul class="nav">
-                                    <li>
-                                        <a href="#profile">
-                                            <span class="link-collapse">My Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#edit">
-                                            <span class="link-collapse">Edit Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#settings">
-                                            <span class="link-collapse">Settings</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <ul class="nav nav-primary">
@@ -165,28 +144,44 @@
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/makananberat">
+                                        <a class="nav-link" href="/makananberat">
                                             <span class="sub-item">Makanan Berat</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/makananringan">
+                                        <a class="nav-link" href="/makananringan">
                                             <span class="sub-item">Makanan Ringan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/minuman">
+                                        <a class="nav-link" href="/minuman">
                                             <span class="sub-item">Minuman</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/kerajinan">
+                                        <a class="nav-link" href="/kerajinan">
                                             <span class="sub-item">Kerajinan</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/lainlain">
+                                        <a class="nav-link" href="/lainlain">
                                             <span class="sub-item">Lain - lain</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#tables">
+                                <i class="fas fa-home"></i>
+                                <p>Toko</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="tables">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a class="nav-link" href="/toko">
+                                            <span class="sub-item">Daftar Toko</span>
                                         </a>
                                     </li>
                                 </ul>
