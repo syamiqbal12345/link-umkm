@@ -1,7 +1,13 @@
 @extends('base')
 
 @section('content')
-	<h3>Data Barang Toko</h3>
-	<hr>
-	{!! form($form) !!}
+	<div class="card">
+        <div class="card-header">
+            <div class="card-title">Manage Data Barang</div>
+        </div>
+
+        <div class="card-body">
+            {!! form($form) !!}
+        </div>
+    </div>
 @endsection

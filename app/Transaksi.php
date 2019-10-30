@@ -7,11 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Transaksi extends Model
 {
     protected $table="transaksi";
-    protected $fillable = ["pembeli_id","tanggal","status","total","kurir_id","alamat","biaya_kurir","rating"];
+    protected $fillable = [
+        "pembeli_id","tanggal","status","total","kurir_id","alamat","biaya_kurir","rating"];
 
-    public function pengguna()
+    public function pembeli()
     {
-        return $this->hasOne(Pengguna::class, "user_id", "id");
+        return $this->belongsTo(Pengguna::class, "pembeli_id", "id");
+    }
+
+    public function items()
+    {
+        return $this->hasMany(ItemTransaksi::class, "transaksi_id", "id");
     }
 
 }
