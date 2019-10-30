@@ -27,7 +27,6 @@ Route::get('/', function () {
 Route::get('/edit', function () {return view('edit'); });
 
 
-
 Route::get('/transaksi', function () { return view('transaksi'); });
 
 Route::get('/makananberat', function () { return view('makananberat'); });
@@ -43,6 +42,7 @@ Route::get('/minuman', function () { return view('minuman'); });
 Route::get('/kerajinan', function () { return view('kerajinan'); });
 
 Route::get('/lainlain', function () { return view('lainlain'); });
+
 
 
 

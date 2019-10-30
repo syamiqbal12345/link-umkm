@@ -35,10 +35,8 @@ btn-primary">Tambah</a>
 		<td>
 		<div class="btn-group btn-group-sm">
 			<a class="btn btn-warning"
-href="{{ route('toko.edit', ['id' => $toko->id]) }}">Edit</a>
-			<a class="btn btn-danger"
-href="{{ route('toko.delete', ['id' =>
-$toko->id]) }}">Del</a>
+href="{{ route('toko.edit', ['id' => $toko->id]) }}">Edit</a> <a class="btn btn-danger"
+href="{{ route('toko.delete', ['id' => $toko->id]) }}">Del</a>
 						</div>
 					</td>
 				</tr>
