@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Makanan Ringan</title>
+    <title>Data Diri</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
@@ -21,6 +21,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/atlantis.min.css">
+    <link rel="stylesheet" href="../assets/css/css biodata.css">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="../assets/css/demo.css">
@@ -30,9 +31,8 @@
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                
-                <a href="http://127.0.0.1:8000/" class="logo">
-                    <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                <a href="/" class="logo">
+                    <img src="../assets/img/21.png" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -50,7 +50,7 @@
 
             <!-- Navbar Header -->
             <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-                
+
                 <div class="container-fluid">
                     <div class="collapse" id="search-nav">
                         <form class="navbar-left navbar-form nav-search mr-md-3">
@@ -71,6 +71,76 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown hidden-caret">
+                            <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                                <li>
+                                    <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                        Messages
+                                        <a href="#" class="small">Mark all as read</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="message-notif-scroll scrollbar-outer">
+                                        <div class="notif-center">
+                                            <a href="#">
+                                                <div class="notif-img">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
+                                                </div>
+                                                <div class="notif-content">
+                                                    <span class="subject">Farid Majid</span>
+                                                    <span class="block">
+                                                        Hai Iqbal ?
+                                                    </span>
+                                                    <span class="time">5 minutes ago</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notif-img">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
+                                                </div>
+                                                <div class="notif-content">
+                                                    <span class="subject">Dewi Dian</span>
+                                                    <span class="block">
+                                                        Ok, Terima Kasih !
+                                                    </span>
+                                                    <span class="time">12 minutes ago</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notif-img">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
+                                                </div>
+                                                <div class="notif-content">
+                                                    <span class="subject">Wiliam Aryanda</span>
+                                                    <span class="block">
+                                                        Pesan apa bal ?
+                                                    </span>
+                                                    <span class="time">12 minutes ago</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notif-img">
+                                                    <img src="../assets/img/profile4.jpg" alt="Img Profile">
+                                                </div>
+                                                <div class="notif-content">
+                                                    <span class="subject">Wulan Fitri Anjaswati</span>
+                                                    <span class="block">
+                                                        Hi, Apa Kabar Iqbal ?
+                                                    </span>
+                                                    <span class="time">17 minutes ago</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown hidden-caret">
                             <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="notification">4</span>
@@ -88,7 +158,7 @@
                                                     <span class="block">
                                                         Ada pesan belum terbaca
                                                     </span>
-                                                    <span class="time">5 minutes ago</span> 
+                                                    <span class="time">5 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -97,18 +167,18 @@
                                                     <span class="block">
                                                         Rahmad menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
-                                                <div class="notif-img"> 
+                                                <div class="notif-img">
                                                     <img src="../assets/img/profile4.jpg" alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
                                                         Reza menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">12 minutes ago</span> 
+                                                    <span class="time">12 minutes ago</span>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -117,7 +187,7 @@
                                                     <span class="block">
                                                         Farrah menggirim pesan untuk kamu
                                                     </span>
-                                                    <span class="time">17 minutes ago</span> 
+                                                    <span class="time">17 minutes ago</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -164,7 +234,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="sidebar sidebar-style-2">           
+        <div class="sidebar sidebar-style-2">
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <div class="user">
@@ -205,7 +275,7 @@
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <p>MAKANAN RINGAN</p>
+                                <p>DATA DIRI</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -336,106 +406,57 @@
                 <div class="panel-header bg-primary-gradient">
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-                            <div>
-                                <h2 class="text-white pb-2 fw-bold">Makanan Ringan</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
-                            </div>
-                           <div class="ml-md-auto py-2 py-md-0">
-                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-            <div class="page-inner mt--5">
-                <div class="card" style="width: 18rem;">
-    <img src="../assets/img/oops.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Oops</h5>
-                <p class="card-text">
-                Oops adalah jajanan ringan yang bervariasi rasa dari original,sapi,dan keju.
-            </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.3.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
+            <body>
+    <form action="#" style="width: 1000px"class="posisi";>
+    <fieldset class="h"/>
+    <table style="width: 980px;">
+    <tr>
+        <td rowspan="15" width="250px">
+            <img src="../assets/img/iqbal.jpg" width="250px" height="420px"/>
+        </td>
+    </tr>
+    <tr>
+            <td><b>Nama</b></td>
+            <td>:</td>
+            <td>Muhammad Iqbal Syamwardana</td>
+    </tr>
+    <tr>
+            <td><b>Nomor KTP</b></td>
+            <td>:</td>
+            <td>640002472627736</td>
+    </tr>
+    <tr>
+            <td><b>Jenis Kelamin</b></td>
+            <td>:</td>
+            <td>Laki - Laki</td>
+    </tr>
+    <tr>
+            <td><b>Email</b></td>
+            <td>:</td>
+            <td>syamiqbal1234@gmail.com</td>
+    </tr>
+    <tr>
+            <td><b>Alamat</b></td>
+            <td>:</td>
+            <td>Jalan.Pesugihan, Komplek Harapan Baru, Samarinda Sebrang, Kalimantan Timur</td>
+    <tr>
+            <td><b>Kurir Id</b></td>
+            <td>:</td>
+ <td colspan="1" align="left">
+ Ingin Jadi Kurir? <a href="Detail.html"style="text-decoration: none;" target="_parent"><input
+ type="button" class="btn btn-success"value="Come Join Us "/></a>
+ </td>
+ </tr>
+ </table>
+ </fieldset>
+ </form>
+ </body>
+ </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/lays.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Lays</h5>
-                <p class="card-text">
-                Lays adalah makanan ringan yang terbuat yang dari singkong dan bervariasi rasa.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.5.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/taro.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Taro</h5>
-                <p class="card-text">
-                Taro adalah jajanan ringan yang bervariasi rasa dari original,sapi,balado dan keju.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.4.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="../assets/img/pillows.jpg" class="card-img-top" alt="gambar">
-        <div class="card-body">
-            <h5 class="card-title">Pillows</h5>
-                <p class="card-text">
-                Pillows adalah makanan ringan yang terkenal akan coklatnya. adapun pilihan rasanya coklat dan ubi.
-                </p>
-        </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Harga : Rp.7.000.-/Pcs</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Lihat</a>
-        <a href="#" class="card-link">Beli</a>
-    </div>
-</div>
-        <footer class="footer">
-                <div class="container-fluid">
-                    <nav class="pull-left">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Al-Khawarizmi Team
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../assets/html/CS.html">
-                                    Help
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="copyright ml-auto">
-                        2019, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Al-Khawarizmi Team</a>
-                    </div>              
-                </div>
-            </footer>
-        </div>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
