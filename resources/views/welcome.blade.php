@@ -291,7 +291,7 @@
             <div class="page-inner mt--5">
             <div class="row">
                 @foreach($data_barang as $item)
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="{{ asset('storage/'.$item->foto) }}" class="card-img-top" alt="gambar">
                             <div class="card-body">
