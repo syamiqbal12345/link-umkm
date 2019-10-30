@@ -49,7 +49,6 @@
 
             <!-- Navbar Header -->
             <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-
                 <div class="container-fluid">
                     <div class="collapse" id="search-nav">
                         <form class="navbar-left navbar-form nav-search mr-md-3">
@@ -93,7 +92,7 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
+                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
@@ -117,37 +116,15 @@
                                 <span>
                                     M Iqbal
                                     <span class="user-level">User</span>
-                                    <span class="caret"></span>
                                 </span>
                             </a>
                             <div class="clearfix"></div>
-
-                            <div class="collapse in" id="collapseExample">
-                                <ul class="nav">
-                                    <li>
-                                        <a href="#profile">
-                                            <span class="link-collapse">My Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#edit">
-                                            <span class="link-collapse">Edit Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#settings">
-                                            <span class="link-collapse">Settings</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <ul class="nav nav-primary">
                         <li class="nav-item active">
                             <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <i class="fas fa-home"></i>
-                                <p>HALAMAN UTAMA</p>
+                                <p>UMKM</p>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -187,6 +164,22 @@
                                     <li>
                                         <a class="nav-link" href="http://127.0.0.1:8000/lainlain">
                                             <span class="sub-item">Lain - lain</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#tables">
+                                <i class="fas fa-home"></i>
+                                <p>Toko</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="tables">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a class="nav-link" href="/toko">
+                                            <span class="sub-item">Daftar Toko</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -279,12 +272,11 @@
                     <div class="page-inner py-5">
                         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                             <div>
-                                <h2 class="text-white pb-2 fw-bold">Halaman Utama</h2>
-                                <h5 class="text-white op-7 mb-2">Pilih Yang Anda Inginkan :)</h5>
+                                <h2 class="text-white pb-2 fw-bold">UMKM</h2>
+                                <h5 class="text-white op-7 mb-2">Connects you from the bottom <i class="fa fa-heart heart text-danger"></i></h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
-                                >
                             </div>
                         </div>
                     </div>
@@ -355,5 +347,5 @@
 
     <!-- Atlantis JS -->
     <script src="{{ asset('assets/js/atlantis.min.js')}}"></script>
-</body>
+</div>
 </html>

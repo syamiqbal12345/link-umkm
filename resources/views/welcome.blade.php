@@ -93,7 +93,7 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/user/create">Registrasi</a>
+                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>

@@ -26,12 +26,12 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/edit', function () {
-    return view('edit');
+Route::get('/profiltoko', function () {
+    return view('profiltoko');
 });
 
-Route::get('/coba', function () {
-    return view('coba');
+Route::get('/edit', function () {
+    return view('edit');
 });
 
 Route::get('/transaksi', function () {
