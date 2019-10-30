@@ -35,10 +35,8 @@
                 <td>{{ $item->rating }}</td>
                 <td><img src="{{ $item->foto }}" width="100"> </td>
                 <td>
-                    <div class="btn-group btn-group-sm">
-                        <a class="btn btn-warning" href="{{ route('transaksi.edit', ['id' => $item->id]) }}">Edit</a>
-                        <a class="btn btn-danger" href="{{ route('transaksi.delete', ['id' => $item->id]) }}">Del</a>
-                    </div>
+                    <a class="btn btn-warning" href="{{ route('transaksi.show', ['id' => $item->id]) }}"><i class="fa fa-show"></i></a>
+
                 </td>
             </tr>
         @endforeach
