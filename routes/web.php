@@ -22,11 +22,17 @@ Route::get('/', function () {
 })->name('welcome.index');
 
 
+Route::get('/profiltoko', function () {
+    return view('profiltoko');
+});
 
+Route::get('/edit', function () {
+    return view('edit');
+});
 
 Route::get('/edit', function () {return view('edit'); });
 
-
+Route::get('/barangtoko', function () { return view('barangtoko'); });
 
 Route::get('/transaksi', function () { return view('transaksi'); });
 
