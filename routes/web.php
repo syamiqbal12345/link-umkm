@@ -59,7 +59,8 @@ Route::match(["post", "get"], '/profile', function (\Illuminate\Http\Request $re
 
 Route::get('/edit', function () {return view('edit'); });
 
-Route::get('/barangtoko', function () { return view('barangtoko'); });
+
+Route::get('/kurir', function () { return view('kurir'); });
 
 Route::get('/transaksi', function () { return view('transaksi'); });
 
@@ -77,6 +78,8 @@ Route::get('/kerajinan', function () { return view('kerajinan'); });
 
 Route::get('/lainlain', function () { return view('lainlain'); });
 
+
+Route::get('/admin', function () { return view('admin'); });
 
 
 Route::get("/users", 'UserController@index')->name("user.index");
@@ -170,6 +173,9 @@ Route::post("/transaksi-set-kurir", 'TransaksiController@setKurir')->name("trans
 
 Route::get('/login','SecurityController@login')->name('login');
 Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
+
+Route::get('/registrasi', function () { return view('/users/create'); });
+
 Route::get('/logout', 'SecurityController@logout')->name('login');
 Route::get('/logout', 'SecurityController@logout');
 

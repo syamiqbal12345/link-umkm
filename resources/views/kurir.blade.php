@@ -92,8 +92,6 @@
                                         <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
                                     </li>
                                 </div>
                             </ul>
@@ -116,7 +114,7 @@
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                                 <span>
                                     M Iqbal
-                                    <span class="user-level">User</span>
+                                    <span class="user-level">Kurir</span>
                                 </span>
                             </a>
                             <div class="clearfix"></div>
@@ -137,68 +135,10 @@
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#base">
                                 <i class="fas fa-layer-group"></i>
-                                <p>Customer</p>
+                                <p>Detail Pesanan</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="base">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a class="nav-link" href="/">
-                                            <span class="sub-item">Barang</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="/transaksi">
-                                            <span class="sub-item">Keranjang</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="/itemtransaksi">
-                                            <span class="sub-item">Riwayat Transaksi</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="https://www.youtube.com/watch?v=HRVlfz2MSVY">
-                                            <span class="sub-item">Edukasi Video</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="#">
-                                            <span class="sub-item">Edukasi Seminar</span>
-                                        </a>
-                                    </li>
-                                    <ul class="nav nav-collapse"></ul>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#tables">
-                                <i class="fas fa-home"></i>
-                                <p>Toko</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="tables">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a class="nav-link" href="/toko">
-                                            <span class="sub-item">Daftar Toko</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="/barang">
-                                            <span class="sub-item">Daftar Barang</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#forms">
-                                <i class="fa fa-motorcycle"> </i>
-                                <p>Kurir</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="forms">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a class="nav-link" href="/transaksi/3/show">
@@ -206,7 +146,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/my-transaksi">
+                                        <a class="nav-link" href="/my-transaksi">
                                             <span class="sub-item">Riwayat Transaksi</span>
                                         </a>
                                     </li>
@@ -214,46 +154,20 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a data-toggle="collapse" href="#sidebarLayouts">
-                                <i class="fas fa-street-view"></i>
-                                <p>Admin</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="sidebarLayouts">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="/users">
-                                            <span class="sub-item">Pengguna</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/toko">
-                                            <span class="sub-item">Pemilik Toko</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/kurir">
-                                            <span class="sub-item">Kurir</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="collapse" href="#charts">
-                                <i class="fas fa-camera"></i>
+                            <a data-toggle="collapse" href="#tables">
+                                <i class="fas fa-table"></i>
                                 <p>Sosmed Promosi</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse" id="charts">
+                            <div class="collapse" id="tables">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a href="https://instagram.com/umkm.samarinda.1">
+                                        <a class="nav-link" href="https://www.instagram.com/umkm_samarinda">
                                             <span class="sub-item">Instagram</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://facebook.com/umkm.samarinda">
+                                        <a class="nav-link" href="https://www.facebook.com/umkm.samarinda.1">
                                             <span class="sub-item">Facebook</span>
                                         </a>
                                     </li>
@@ -276,29 +190,6 @@
                                 </ul>
                             </div>
                         </li>
-
-                        <li class="nav-item">
-                            <div class="collapse" id="maps">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/users">
-                                            <span class="sub-item">Pengguna</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/toko">
-                                            <span class="sub-item">Pemilik Toko</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="http://127.0.0.1:8000/kurir">
-                                            <span class="sub-item">Kurir</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#submenu">
                                 <i class="fas fa-bars"></i>
@@ -307,10 +198,10 @@
                             </a>
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
-                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
+                                    <li>
                                     </li>
                                 </ul>
                             </div>
@@ -332,7 +223,7 @@
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 @if(auth()->user())
-                                    @if(auth()->user()->pengguna->toko == null)
+                                    @if(auth()->user()->pengguna->toko->count() ==0)
                                         <a href="{{ route("toko.create") }}" class="btn btn-secondary btn-round">Buka Toko</a>
                                     @endif
                                 @endif
