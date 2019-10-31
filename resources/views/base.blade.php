@@ -76,6 +76,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-user animated fadeIn">
                                 <div class="dropdown-user-scroll scrollbar-outer">
+                                    @if(auth()->user())
                                     <li>
                                         <div class="user-box">
                                             <div class="avatar-lg"><img src="../assets/img/profile4.jpg" alt="image profile" class="avatar-img rounded"></div>
@@ -85,20 +86,18 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="dropdown-divider"></li>
                                     <li>
-                                        @if(auth()->user())
-                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/profile">My Profile</a>
-
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/logout">Logout</a>
-                                        @else
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="/login">Login</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="/users/create">Registrasi</a>
-                                        @endif
                                     </li>
+                                    <li class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                                    @else
+                                    <li><a class="dropdown-item" href="/login">Login</a></li>
+                                    <li class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/users/create">Registrasi</a></li>
+                                    @endif
+
                                 </div>
                             </ul>
                         </li>
