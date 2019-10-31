@@ -31,7 +31,7 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
                 <a href="/" class="logo">
-                    <img src="{{ asset('asset/img/21.png') }}" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ asset('assets/img/21.png') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -87,7 +87,8 @@
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/edit">My Profile</a>
+                                        <a class="dropdown-item" href="#">My Profile</a>
+                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
@@ -215,12 +216,12 @@
                             <div class="collapse" id="tables">
                                 <ul class="nav nav-collapse">
                                     <li>
-                                        <a class="nav-link" href="https://www.instagram.com/wiliam_aryanda">
+                                        <a class="nav-link" href="https://www.instagram.com/umkm_samarinda">
                                             <span class="sub-item">Instagram</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100004740226308">
+                                        <a class="nav-link" href="https://www.facebook.com/umkm.samarinda.1">
                                             <span class="sub-item">Facebook</span>
                                         </a>
                                     </li>
@@ -252,10 +253,23 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
+                                        <a class="collapse" href="#">
+                                            <span class="sub-item">Kurir</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse" href="/itemtransaksi">
+                                            <span class="sub-item">Keranjang</span>
+                                        </a>
+                                    <li>
+                                        <a class="collapse" href="/transaksi">
+                                            <span class="sub-item">Riwayat Transaksi</span>
+                                        </a>
+                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
-                                    </li>
+                                    <li>
                                     </li>
                                 </ul>
                             </div>
@@ -276,7 +290,11 @@
                                 <h5 class="text-white op-7 mb-2">Connects you from the bottom <i class="fa fa-heart heart text-danger"></i></h5>
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
-                                <a href="http://127.0.0.1:8000/toko" class="btn btn-secondary btn-round">Buat Toko</a>
+                                @if(auth()->user())
+                                    @if(auth()->user()->pengguna->toko->count() ==0)
+                                        <a href="{{ route("toko.create") }}" class="btn btn-secondary btn-round">Buka Toko</a>
+                                    @endif
+                                @endif
                             </div>
                         </div>
                     </div>

@@ -10,16 +10,30 @@ use App\Pembeli;
 use App\Pengguna;
 use Illuminate\Support\Facades\Auth;
 
-
-
 class TransaksiController extends Controller
 {
     public function index()
     {
 		$transaksi = Transaksi::all();
+
 		$data = [ 'transaksi' => $transaksi ];
 		return view("transaksi.index", $data);
 	}
+
+    public function myTransaction()
+    {
+        $transaksi = Transaksi::where("pembeli_id", \auth()->user()->pengguna->id)->get();
+
+        $data = [ 'transaksi' => $transaksi ];
+        return view("transaksi.index", $data);
+    }
+
+    public function show($id)
+    {
+        $transaksi = Transaksi::find($id);
+        $data = [ 'transaksi' => $transaksi ];
+        return view("transaksi.show", $data);
+    }
 
 	public function create(FormBuilder $formBuilder)
 	{

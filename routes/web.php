@@ -19,12 +19,8 @@ Route::get('/', function () {
     return view('welcome', [
         'data_barang' => $data_barang
     ]);
-});
+})->name('welcome.index');
 
-
-Route::get('/login', function () {
-    return view('login');
-});
 
 Route::get('/profiltoko', function () {
     return view('profiltoko');
@@ -34,37 +30,27 @@ Route::get('/edit', function () {
     return view('edit');
 });
 
-Route::get('/transaksi', function () {
-    return view('transaksi');
-});
+Route::get('/edit', function () {return view('edit'); });
 
-Route::get('/makananberat', function () {
-    return view('makananberat');
-});
+Route::get('/barangtoko', function () { return view('barangtoko'); });
 
-Route::get('/lihat', function () {
-    return view('lihat');
-});
+Route::get('/transaksi', function () { return view('transaksi'); });
 
-Route::get('/riwayat', function () {
-    return view('riwayat');
-});
+Route::get('/makananberat', function () { return view('makananberat'); });
 
-Route::get('/makananringan', function () {
-    return view('makananringan');
-});
+Route::get('/lihat', function () { return view('lihat'); });
 
-Route::get('/minuman', function () {
-    return view('minuman');
-});
+Route::get('/riwayat', function () { return view('riwayat'); });
 
-Route::get('/kerajinan', function () {
-    return view('kerajinan');
-});
+Route::get('/makananringan', function () { return view('makananringan'); });
 
-Route::get('/lainlain', function () {
-    return view('lainlain');
-});
+Route::get('/minuman', function () { return view('minuman'); });
+
+Route::get('/kerajinan', function () { return view('kerajinan'); });
+
+Route::get('/lainlain', function () { return view('lainlain'); });
+
+
 
 Route::get("/users", 'UserController@index')->name("user.index");
 
@@ -90,90 +76,73 @@ Route::get("/toko/{id}/edit", 'TokoController@edit')->name("toko.edit");
 
 Route::post("/toko/{id}", 'TokoController@update')->name("toko.update");
 
-Route::get("/toko/{id}/delete",
-'TokoController@delete')->name("toko.delete");
+Route::get("/toko/{id}/delete", 'TokoController@delete')->name("toko.delete");
 
 
 Route::middleware(['auth'])->group(function(){
+
     Route::get("/barang", 'BarangController@index')->name("barang.index");
+
     Route::get("/barang/create", 'BarangController@create')->name("barang.create");
+
     Route::post("/barang", 'BarangController@store')->name("barang.store");
+
     Route::get("/barang/{id}/edit", 'BarangController@edit')->name("barang.edit");
+
     Route::post("/barang/{id}", 'BarangController@update')->name("barang.update");
+
     Route::get("/barang/{id}/delete", 'BarangController@delete')->name("barang.delete");
 
 });
 
-
 Route::get("/barang/{id}", 'BarangController@show')->name("barang.show");
 
 
+Route::get("/kategori", 'KategoriController@index')->name("kategori.index");
 
-Route::get("/kategori",
-'KategoriController@index')->name("kategori.index");
+Route::get("/kategori/create", 'KategoriController@create')->name("kategori.create");
 
-Route::get("/kategori/create",
-'KategoriController@create')->name("kategori.create");
+Route::post("/kategori", 'KategoriController@store')->name("kategori.store");
 
-Route::post("/kategori",
-'KategoriController@store')->name("kategori.store");
+Route::get("/kategori/{id}/edit", 'KategoriController@edit')->name("kategori.edit");
 
-Route::get("/kategori/{id}/edit",
-'KategoriController@edit')->name("kategori.edit");
+Route::post("/kategori/{id}", 'KategoriController@update')->name("kategori.update");
 
-Route::post("/kategori/{id}",
-'KategoriController@update')->name("kategori.update");
-
-Route::get("/kategori/{id}/delete",
-'KategoriController@delete')->name("kategori.delete");
+Route::get("/kategori/{id}/delete", 'KategoriController@delete')->name("kategori.delete");
 
 
-Route::get("/itemtransaksi",
-'ItemTransaksiController@index')->name("itemtransaksi.index");
+Route::get("/itemtransaksi", 'ItemTransaksiController@index')->name("itemtransaksi.index");
+
 Route::post("/item-transaksi-update", 'ItemTransaksiController@updateTransaksi')->name("itemtransaksi.index.update");
 
-Route::get("/itemtransaksi/create",
-'ItemTransaksiController@create')->name("itemtransaksi.create");
+Route::get("/itemtransaksi/create", 'ItemTransaksiController@create')->name("itemtransaksi.create");
 
-Route::post("/itemtransaksi",
-'ItemTransaksiController@store')->name("itemtransaksi.store");
+Route::post("/itemtransaksi", 'ItemTransaksiController@store')->name("itemtransaksi.store");
 
-Route::get("/itemtransaksi/{id}/edit",
-'ItemTransaksiController@edit')->name("itemtransaksi.edit");
+Route::get("/itemtransaksi/{id}/edit", 'ItemTransaksiController@edit')->name("itemtransaksi.edit");
 
-Route::post("/itemtransaksi/{id}",
-'ItemTransaksiController@update')->name("itemtransaksi.update");
+Route::post("/itemtransaksi/{id}", 'ItemTransaksiController@update')->name("itemtransaksi.update");
 
-Route::get("/itemtransaksi/{id}/delete",
-'ItemTransaksiController@delete')->name("itemtransaksi.delete");
+Route::get("/itemtransaksi/{id}/delete", 'ItemTransaksiController@delete')->name("itemtransaksi.delete");
 
 
-Route::get("/transaksi",
-'TransaksiController@index')->name("transaksi.index");
+Route::get("/transaksi", 'TransaksiController@index')->name("transaksi.index");
 
-Route::get("/transaksi/create",
-'TransaksiController@create')->name("transaksi.create");
 
-Route::post("/transaksi",
-'TransaksiController@store')->name("transaksi.store");
+Route::get("/transaksi/create", 'TransaksiController@create')->name("transaksi.create");
+Route::post("/transaksi", 'TransaksiController@store')->name("transaksi.store");
+Route::get("/transaksi/{id}/edit", 'TransaksiController@edit')->name("transaksi.edit");
+Route::post("/transaksi/{id}", 'TransaksiController@update')->name("transaksi.update");
+Route::get("/transaksi/{id}/delete", 'TransaksiController@delete')->name("transaksi.delete");
+Route::get("/transaksi/{id}/show", 'TransaksiController@show')->name("transaksi.show");
+Route::get("/my-transaksi", 'TransaksiController@myTransaction')->name("transaksi.my");
 
-Route::get("/transaksi/{id}/edit",
-'TransaksiController@edit')->name("transaksi.edit");
-
-Route::post("/transaksi/{id}",
-'TransaksiController@update')->name("transaksi.update");
-
-Route::get("/transaksi/{id}/delete",
-'TransaksiController@delete')->name("transaksi.delete");
 
 
 
 Route::get('/login','SecurityController@login')->name('login');
-
 Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
-
 Route::get('/logout', 'SecurityController@logout')->name('login');
-
 Route::get('/logout', 'SecurityController@logout');
 
 

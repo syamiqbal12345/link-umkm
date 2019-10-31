@@ -422,7 +422,7 @@
            <div class="card mb-3" style="max-width: 1050px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="{{ asset('images/'.$barang->foto) }}" width="300px" class="card-img" alt="gambar">
+      <img src="{{ asset('storage/'.$barang->foto) }}" width="300px" class="card-img" alt="gambar">
     </div>
     <div class="col-md-8">
       <div class="card-body">

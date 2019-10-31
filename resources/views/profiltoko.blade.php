@@ -6,7 +6,7 @@
 			<div class="card-title">
 				<h2 class="text-blue fw-bold">PROFIL TOKO</h2>
 				<div class="pull-right">
-					<a style="color:#fff" href="#" class="btn btn-primary">Edit</a>
+					<a style="color:#fff" href="/toko/1/edit" class="btn btn-primary">Edit</a>
 				</div>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
     <tr>
             <td><b>Nama</b></td>
             <td>:</td>
-            <td>Toko Kita</td>
+            <td>Toko Surisa</td>
     </tr>
     <tr>
             <td><b>Pemilik</b></td>
@@ -57,6 +57,13 @@
             <td>:</td>
  <td colspan="1" > <a href="#"style="text-decoration: none;" target="_parent"><input
  type="button" class="btn btn-success"value="Buka"/></a>
+ </td>
+    </tr>
+    <tr>
+            <td><b>Barang Toko</b></td>
+            <td>:</td>
+ <td colspan="1" > <a href="/coba"style="text-decoration: none;" target="_parent"><input
+ type="button" class="btn btn-info"value="Yuk Dilihat"/></a>
  </td>
     </tr>
 			</tr>

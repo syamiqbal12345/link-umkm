@@ -89,7 +89,8 @@
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/edit">My Profile</a>
+                                        <a class="dropdown-item" href="#">My Profile</a>
+                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
@@ -115,31 +116,15 @@
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-                                <span>
+                              <span>
                                     M Iqbal
                                     <span class="user-level">User</span>
-                                    <span class="caret"></span>
-                                </span>
+                                    </span>
                             </a>
                             <div class="clearfix"></div>
 
                             <div class="collapse in" id="collapseExample">
                                 <ul class="nav">
-                                    <li>
-                                        <a href="#profile">
-                                            <span class="link-collapse">My Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#edit">
-                                            <span class="link-collapse">Edit Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#settings">
-                                            <span class="link-collapse">Settings</span>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -259,10 +244,23 @@
                             <div class="collapse" id="submenu">
                                 <ul class="nav nav-collapse">
                                     <li>
+                                        <a class="collapse" href="#">
+                                            <span class="sub-item">Kurir</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse" href="/itemtransaksi">
+                                            <span class="sub-item">Keranjang</span>
+                                        </a>
+                                    <li>
+                                        <a class="collapse" href="/transaksi">
+                                            <span class="sub-item">Riwayat Transaksi</span>
+                                        </a>
+                                    <li>
                                         <a data-toggle="collapse" href="../assets/html/CS.html">
                                             <span class="sub-item">Customer Service</span>
                                         </a>
-                                    </li>
+                                    <li>
                                     </li>
                                 </ul>
                             </div>
