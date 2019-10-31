@@ -15,6 +15,11 @@ class Transaksi extends Model
         return $this->belongsTo(Pengguna::class, "pembeli_id", "id");
     }
 
+    public function kurir()
+    {
+        return $this->belongsTo(Pengguna::class, "kurir_id", "id");
+    }
+
     public function items()
     {
         return $this->hasMany(ItemTransaksi::class, "transaksi_id", "id");

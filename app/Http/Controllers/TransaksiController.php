@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\TransaksiForm;
@@ -28,10 +29,32 @@ class TransaksiController extends Controller
         return view("transaksi.index", $data);
     }
 
+    public function setKurir(Request $request)
+    {
+        $t = Transaksi::find($request->get('transaksi_id'));
+
+        if ($request->get('kurir_id') == null)
+            return back();
+
+        $t->kurir_id = $request->get('kurir_id');
+        $t->save();
+
+        return back();
+
+    }
+
     public function show($id)
     {
+        $user = \auth()->user();
+        $arrayLevel = explode(",", $user->level);
+        $arrayLevel = array_map(function($item){
+            return trim($item);
+        }, $arrayLevel);
+
+        $dataKurir = User::with("pengguna")->where("level", "like", "%kurir%")->get();
+
         $transaksi = Transaksi::find($id);
-        $data = [ 'transaksi' => $transaksi ];
+        $data = [ 'transaksi' => $transaksi, 'arrayLevel' => $arrayLevel, 'dataKurir' => $dataKurir ];
         return view("transaksi.show", $data);
     }
 
