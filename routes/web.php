@@ -138,6 +138,7 @@ Route::post("/transaksi/{id}", 'TransaksiController@update')->name("transaksi.up
 Route::get("/transaksi/{id}/delete", 'TransaksiController@delete')->name("transaksi.delete");
 Route::get("/transaksi/{id}/show", 'TransaksiController@show')->name("transaksi.show");
 Route::get("/my-transaksi", 'TransaksiController@myTransaction')->name("transaksi.my");
+Route::post("/transaksi-set-kurir", 'TransaksiController@setKurir')->name("transaksi.set-kurir");
 
 
 

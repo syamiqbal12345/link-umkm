@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('content')
-	<div class="card">
+    <div class="card">
         <div class="card-header">
             <div class="card-title">Manage Data Barang</div>
         </div>
@@ -11,3 +11,5 @@
         </div>
     </div>
 @endsection
+
+
