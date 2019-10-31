@@ -281,7 +281,7 @@
                             </div>
                             <div class="ml-md-auto py-2 py-md-0">
                                 @if(auth()->user())
-                                    @if(auth()->user()->pengguna->toko->count() ==0)
+                                    @if(auth()->user()->pengguna->toko == null)
                                         <a href="{{ route("toko.create") }}" class="btn btn-secondary btn-round">Buka Toko</a>
                                     @endif
                                 @endif

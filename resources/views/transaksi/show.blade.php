@@ -87,4 +87,57 @@
             </table>
         </div>
     </div>
+
+    @if($transaksi->kurir_id !=0 || $transaksi->kurir_id !=null)
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Informasi Kurir</div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Kurir</th>
+                        <td>{{ $transaksi->kurir->nama }}</td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    @endif
+
+
+
+    @if(in_array('admin', $arrayLevel))
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Informasi Kurir</div>
+            </div>
+            <div class="card-body">
+                <form action="{{ route('transaksi.set-kurir') }}" method="post">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="transaksi_id" value="{{ $transaksi->id }}">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Kurir</th>
+
+                    </tr>
+
+                    @foreach($dataKurir as $kurir)
+                        <tr>
+                            <td>
+                                <input id="kurir_id" type="radio" name="kurir_id" value="{{ $kurir->pengguna->id }}" @if($kurir->pengguna->id == $transaksi->kurir_id) checked @endif>
+                                <label for="kurir_id">{{ $kurir->pengguna->nama }}</label>
+                            </td>
+                        </tr>
+                    @endforeach
+
+                </table>
+
+                    <button class="btn btn-primary" type="submit">Set Kurir</button>
+                </form>
+            </div>
+        </div>
+
+    @endif
 @endsection
