@@ -87,7 +87,7 @@
                                     </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">My Profile</a>
+                                        <a class="dropdown-item" href="/profile">My Profile</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/login">Login</a>
                                         <div class="dropdown-divider"></div>
