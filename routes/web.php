@@ -33,6 +33,8 @@ Route::get('/edit', function () {
 Route::get('/edit', function () {return view('edit'); });
 
 
+Route::get('/kurir', function () { return view('kurir'); });
+
 Route::get('/transaksi', function () { return view('transaksi'); });
 
 Route::get('/makananberat', function () { return view('makananberat'); });
