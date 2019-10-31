@@ -123,21 +123,10 @@
                         </div>
                     </div>
                     <ul class="nav nav-primary">
-                        <li class="nav-item active">
-                            <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                                <p>UMKM</p>
-                            </a>
-                        </li>
-                        <li class="nav-section">
-                            <span class="sidebar-mini-icon">
-                                <i class="fa fa-ellipsis-h"></i>
-                            </span>
-                            <h4 class="text-section">Komponen</h4>
-                        </li>
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#base">
                                 <i class="fas fa-layer-group"></i>
-                                <p>Customer</p>
+                                <p>Navigasi</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="base">
