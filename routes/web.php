@@ -26,8 +26,35 @@ Route::get('/profiltoko', function () {
     return view('profiltoko');
 });
 
-Route::get('/edit', function () {
-    return view('edit');
+Route::match(["post", "get"], '/profile', function (\Illuminate\Http\Request $request) {
+    $user = auth()->user();
+    $pengguna = $user->pengguna;
+    $arrayLevel = explode(",", $user->level);
+    $arrayLevel = array_map(function($item) {
+        return trim($item);
+    }, $arrayLevel);
+
+    if ($request->isMethod("POST")) {
+        $status = $request->get("status_kurir",0);
+        if ($status == 1)
+            array_push($arrayLevel, "kurir");
+
+        if ($status == 0) {
+
+            if (($key = array_search("kurir", $arrayLevel)) !== false) {
+                unset($arrayLevel[$key]);
+
+            }
+        }
+
+
+        $user->level = implode(", ", $arrayLevel);
+        $user->save();
+    }
+
+
+
+    return view('edit', ['profile' => $pengguna, 'arrayLevel' => $arrayLevel]);
 });
 
 Route::get('/edit', function () {return view('edit'); });
