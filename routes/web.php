@@ -44,6 +44,7 @@ Route::get('/kerajinan', function () { return view('kerajinan'); });
 Route::get('/lainlain', function () { return view('lainlain'); });
 
 
+Route::get('/admin', function () { return view('admin'); });
 
 
 Route::get("/users", 'UserController@index')->name("user.index");
@@ -136,6 +137,9 @@ Route::get("/my-transaksi", 'TransaksiController@myTransaction')->name("transaks
 
 Route::get('/login','SecurityController@login')->name('login');
 Route::post('/login','SecurityController@prosesLogin')->name('login.proses');
+
+Route::get('/registrasi', function () { return view('/users/create'); });
+
 Route::get('/logout', 'SecurityController@logout')->name('login');
 Route::get('/logout', 'SecurityController@logout');
 
