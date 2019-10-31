@@ -86,14 +86,18 @@
                                         </div>
                                     </li>
                                     <li>
+                                        @if(auth()->user())
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/profile">My Profile</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/login">Login</a>
+
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="/logout">Logout</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/users/create">Registrasi</a>
+                                        @else
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="/login">Login</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="/users/create">Registrasi</a>
+                                        @endif
                                     </li>
                                 </div>
                             </ul>
