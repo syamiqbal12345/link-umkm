@@ -15,43 +15,45 @@
 		<table class="table table-bordered">
 		<tr>
         <td rowspan="15" width="250px">
-            <img src="../assets/img/iqbal.jpg" width="250px" height="420px"/>
+{{--            <img src="../assets/img/iqbal.jpg" width="250px" height="420px"/>--}}
         </td>
     </tr>
     <tr>
             <td><b>Nama</b></td>
-            <td>:</td>
-            <td>Muhammad Iqbal Syamwardana</td>
+            <td>{{ $profile->nama }}</td>
     </tr>
     <tr>
             <td><b>Nomor KTP</b></td>
-            <td>:</td>
-            <td>640002472627736</td>
+            <td>{{ $profile->nomor_ktp }}</td>
     </tr>
     <tr>
             <td><b>Jenis Kelamin</b></td>
-            <td>:</td>
-            <td>Laki - Laki</td>
+            <td>{{ $profile->kelamin == 1 ? "PRIA": "WANITA" }}</td>
     </tr>
     <tr>
             <td><b>Email</b></td>
-            <td>:</td>
-            <td>syamiqbal1234@gmail.com</td>
+            <td>{{ $profile->email }}</td>
     </tr>
-    <tr>
-            <td><b>Alamat</b></td>
-            <td>:</td>
-            <td>Jalan.Pesugihan, Komplek Harapan Baru, Samarinda Sebrang, Kalimantan Timur</td>
-    <tr>
-            <td><b>Kurir</b></td>
-            <td>:</td>
- <td colspan="1" align="left">
- Ingin Jadi Kurir? <a href="#"style="text-decoration: none;" target="_parent"><input
- type="button" class="btn btn-success"value="Come Join Us "/></a>
- </td>
-    </tr>
-			</tr>
-         </table>
+            <tr>
+                <td><b>Alamat</b></td>
+                <td>{{ $profile->alamat }}</td>
+            </tr>
+            <tr>
+                <td><b>Kurir</b></td>
+                <td colspan="1" align="left">
+                    <form action="" method="post">
+                        {{ csrf_field() }}
+                        @if(!in_array("kurir", $arrayLevel))
+                            <input type="hidden" name="status_kurir" value="1"/>
+                            <button type="submit" class="btn btn-success">Available</button>
+                        @else
+                            <input type="hidden" name="status_kurir" value="0"/>
+                            <button type="submit" class="btn btn-danger">Not Available</button>
+                        @endif
+                    </form>
+                </td>
+            </tr>
+        </table>
 	</div>
 </div>
 @endsection
