@@ -140,12 +140,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/transaksi">
+                                        <a class="nav-link" href="/itemtransaksi">
                                             <span class="sub-item">Keranjang</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="/itemtransaksi">
+                                        <a class="nav-link" href="/transaksi">
                                             <span class="sub-item">Riwayat Transaksi</span>
                                         </a>
                                     </li>
