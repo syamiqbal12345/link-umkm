@@ -111,20 +111,6 @@
         <div class="sidebar sidebar-style-2">
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
-                    <div class="user">
-                        <div class="avatar-sm float-left mr-2">
-                            <img src="../assets/img/profile4.jpg" alt="..." class="avatar-img rounded-circle">
-                        </div>
-                        <div class="info">
-                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-                                <span>
-                                    M Iqbal
-                                    <span class="user-level">User</span>
-                                </span>
-                            </a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
                     <ul class="nav nav-primary">
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#base">
